@@ -1,0 +1,147 @@
+{
+ "units": {
+  "XJTU-2C": {
+   "chemistry": "NCM",
+   "nominal_capacity_Ah": 2.0,
+   "cells": 8,
+   "held_out_cells": 2,
+   "cycles_min": 355,
+   "cycles_max": 379,
+   "soh_min": 0.7985
+  },
+  "XJTU-3C": {
+   "chemistry": "NCM",
+   "nominal_capacity_Ah": 2.0,
+   "cells": 15,
+   "held_out_cells": 3,
+   "cycles_min": 116,
+   "cycles_max": 307,
+   "soh_min": 0.8085
+  },
+  "XJTU-R2.5": {
+   "chemistry": "NCM",
+   "nominal_capacity_Ah": 2.0,
+   "cells": 8,
+   "held_out_cells": 2,
+   "cycles_min": 490,
+   "cycles_max": 641,
+   "soh_min": 0.775
+  },
+  "XJTU-R3": {
+   "chemistry": "NCM",
+   "nominal_capacity_Ah": 2.0,
+   "cells": 8,
+   "held_out_cells": 2,
+   "cycles_min": 459,
+   "cycles_max": 633,
+   "soh_min": 0.7972
+  },
+  "XJTU-RW": {
+   "chemistry": "NCM",
+   "nominal_capacity_Ah": 2.0,
+   "cells": 8,
+   "held_out_cells": 2,
+   "cycles_min": 132,
+   "cycles_max": 266,
+   "soh_min": 0.8006
+  },
+  "XJTU-satellite": {
+   "chemistry": "NCM",
+   "nominal_capacity_Ah": 2.0,
+   "cells": 8,
+   "held_out_cells": 2,
+   "cycles_min": 602,
+   "cycles_max": 869,
+   "soh_min": 0.805
+  },
+  "TJU-1": {
+   "chemistry": "NCA",
+   "nominal_capacity_Ah": 3.5,
+   "cells": 66,
+   "held_out_cells": 13,
+   "cycles_min": 26,
+   "cycles_max": 790,
+   "soh_min": 0.6944
+  },
+  "TJU-2": {
+   "chemistry": "NCM",
+   "nominal_capacity_Ah": 3.5,
+   "cells": 55,
+   "held_out_cells": 11,
+   "cycles_min": 42,
+   "cycles_max": 1246,
+   "soh_min": 0.6538
+  },
+  "TJU-3": {
+   "chemistry": "NCM+NCA",
+   "nominal_capacity_Ah": 2.5,
+   "cells": 9,
+   "held_out_cells": 2,
+   "cycles_min": 857,
+   "cycles_max": 964,
+   "soh_min": 0.659
+  },
+  "HUST": {
+   "chemistry": "LFP",
+   "nominal_capacity_Ah": 1.1,
+   "cells": 77,
+   "held_out_cells": 20,
+   "cycles_min": 1115,
+   "cycles_max": 2672,
+   "soh_min": 0.7997
+  },
+  "MIT": {
+   "chemistry": "LFP",
+   "nominal_capacity_Ah": 1.1,
+   "cells": 125,
+   "held_out_cells": 23,
+   "cycles_min": 34,
+   "cycles_max": 2095,
+   "soh_min": 0.8181
+  }
+ },
+ "tju_conditions": {
+  "TJU-1": {
+   "temperatures_C": [
+    25,
+    35,
+    45
+   ],
+   "charge_discharge_rates": [
+    "0.1C/1C",
+    "0.5C/1C",
+    "2.5C/1C"
+   ]
+  },
+  "TJU-2": {
+   "temperatures_C": [
+    25,
+    35,
+    45
+   ],
+   "charge_discharge_rates": [
+    "0.5C/1C"
+   ]
+  },
+  "TJU-3": {
+   "temperatures_C": [
+    25
+   ],
+   "charge_discharge_rates": [
+    "0.5C/1C",
+    "0.5C/2C",
+    "0.5C/4C"
+   ]
+  }
+ },
+ "totals": {
+  "cells": 387,
+  "held_out_cells": 82,
+  "chemistries": {
+   "NCM": 7,
+   "NCA": 1,
+   "NCM+NCA": 1,
+   "LFP": 2
+  }
+ }
+}

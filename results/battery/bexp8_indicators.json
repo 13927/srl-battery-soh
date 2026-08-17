@@ -1,0 +1,38 @@
+{
+ "XJTU-2C": {
+  "group_shift_auc": 0.9867162308365424,
+  "knn_locality_r2": 0.9561293798624555,
+  "degradation_rate": 0.0004169531979653694,
+  "pool_rows": 2177
+ },
+ "XJTU-3C": {
+  "group_shift_auc": 0.9972924658118237,
+  "knn_locality_r2": 0.8275740943900264,
+  "degradation_rate": 0.0005494097775350818,
+  "pool_rows": 2638
+ },
+ "XJTU-satellite": {
+  "group_shift_auc": 0.9307616594884515,
+  "knn_locality_r2": 0.6836261575166915,
+  "degradation_rate": 0.00019241173115967626,
+  "pool_rows": 4313
+ },
+ "TJU-1": {
+  "group_shift_auc": 0.8402006604342436,
+  "knn_locality_r2": 0.6999368911206368,
+  "degradation_rate": 0.0013478940878799983,
+  "pool_rows": 16976
+ },
+ "TJU-3": {
+  "group_shift_auc": 0.916764259851112,
+  "knn_locality_r2": 0.9840648208031354,
+  "degradation_rate": 0.0003289629198546742,
+  "pool_rows": 6466
+ },
+ "MIT": {
+  "group_shift_auc": 0.8012239401389842,
+  "knn_locality_r2": 0.9125102172991033,
+  "degradation_rate": 0.0002634295708034563,
+  "pool_rows": 67669
+ }
+}

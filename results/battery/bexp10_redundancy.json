@@ -1,0 +1,112 @@
+{
+ "XJTU-2C": {
+  "unit": "XJTU-2C",
+  "n_rows": 2177,
+  "effective_rank": 3.4406515965287046,
+  "dim": 17,
+  "eff_rank_ratio": 0.20239127038404145,
+  "neighbor_dist_ratio": 0.11747553283936335,
+  "dedup_ratio_1pct": 0.28801102434542947,
+  "rows_per_cell": 362.8333333333333
+ },
+ "XJTU-3C": {
+  "unit": "XJTU-3C",
+  "n_rows": 2638,
+  "effective_rank": 3.8007752173612857,
+  "dim": 17,
+  "eff_rank_ratio": 0.22357501278595798,
+  "neighbor_dist_ratio": 0.07101174602937112,
+  "dedup_ratio_1pct": 0.14518574677786203,
+  "rows_per_cell": 219.83333333333334
+ },
+ "XJTU-R2.5": {
+  "unit": "XJTU-R2.5",
+  "n_rows": 3240,
+  "effective_rank": 3.341037198667441,
+  "dim": 17,
+  "eff_rank_ratio": 0.19653159992161418,
+  "neighbor_dist_ratio": 0.11175116392135859,
+  "dedup_ratio_1pct": 0.18117283950617283,
+  "rows_per_cell": 540.0
+ },
+ "XJTU-R3": {
+  "unit": "XJTU-R3",
+  "n_rows": 3290,
+  "effective_rank": 3.3814885502283984,
+  "dim": 17,
+  "eff_rank_ratio": 0.1989110911899058,
+  "neighbor_dist_ratio": 0.10059624962450187,
+  "dedup_ratio_1pct": 0.1778115501519757,
+  "rows_per_cell": 548.3333333333334
+ },
+ "XJTU-RW": {
+  "unit": "XJTU-RW",
+  "n_rows": 1114,
+  "effective_rank": 2.9026875408094064,
+  "dim": 17,
+  "eff_rank_ratio": 0.17074632592996508,
+  "neighbor_dist_ratio": 0.11757177949504484,
+  "dedup_ratio_1pct": 0.2836624775583483,
+  "rows_per_cell": 185.66666666666666
+ },
+ "XJTU-satellite": {
+  "unit": "XJTU-satellite",
+  "n_rows": 4313,
+  "effective_rank": 3.5415539815955572,
+  "dim": 17,
+  "eff_rank_ratio": 0.20832670479973867,
+  "neighbor_dist_ratio": 0.10932292874202003,
+  "dedup_ratio_1pct": 0.11592858798979828,
+  "rows_per_cell": 718.8333333333334
+ },
+ "TJU-1": {
+  "unit": "TJU-1",
+  "n_rows": 8000,
+  "effective_rank": 4.579209356544043,
+  "dim": 17,
+  "eff_rank_ratio": 0.2693652562672966,
+  "neighbor_dist_ratio": 0.06181851276830531,
+  "dedup_ratio_1pct": 0.080875,
+  "rows_per_cell": 150.9433962264151
+ },
+ "TJU-2": {
+  "unit": "TJU-2",
+  "n_rows": 8000,
+  "effective_rank": 3.1894097473468523,
+  "dim": 17,
+  "eff_rank_ratio": 0.18761233807922661,
+  "neighbor_dist_ratio": 0.06586650330959175,
+  "dedup_ratio_1pct": 0.06075,
+  "rows_per_cell": 181.8181818181818
+ },
+ "TJU-3": {
+  "unit": "TJU-3",
+  "n_rows": 6466,
+  "effective_rank": 1.8967522356738822,
+  "dim": 17,
+  "eff_rank_ratio": 0.11157366092199307,
+  "neighbor_dist_ratio": 0.05729841556278618,
+  "dedup_ratio_1pct": 0.11475409836065574,
+  "rows_per_cell": 923.7142857142857
+ },
+ "HUST": {
+  "unit": "HUST",
+  "n_rows": 8000,
+  "effective_rank": 3.3360549824226244,
+  "dim": 17,
+  "eff_rank_ratio": 0.19623852837780142,
+  "neighbor_dist_ratio": 0.0681641223058512,
+  "dedup_ratio_1pct": 0.064125,
+  "rows_per_cell": 140.35087719298247
+ },
+ "MIT": {
+  "unit": "MIT",
+  "n_rows": 8000,
+  "effective_rank": 4.938550017120505,
+  "dim": 17,
+  "eff_rank_ratio": 0.29050294218355915,
+  "neighbor_dist_ratio": 0.13402067339788523,
+  "dedup_ratio_1pct": 0.1085,
+  "rows_per_cell": 78.43137254901961
+ }
+}

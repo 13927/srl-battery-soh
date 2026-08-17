@@ -1,0 +1,10 @@
+# Python 3.11+ (developed on 3.14, brew + venv)
+numpy
+scipy
+pandas
+openpyxl
+scikit-learn
+matplotlib
+torch
+tabpfn
+pytest

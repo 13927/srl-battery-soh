@@ -1,0 +1,101 @@
+[
+ {
+  "unit": "XJTU-2C",
+  "rho_resid": 0.4919664508395956,
+  "mse_tab": 1.642929255329538e-05,
+  "mse_gbdt": 2.4423166299346323e-05,
+  "diversity_over4": 5.370508046045228e-06,
+  "gap_over2": 3.996936873025472e-06,
+  "ens_beats_best": true
+ },
+ {
+  "unit": "XJTU-3C",
+  "rho_resid": 0.9031431986389314,
+  "mse_tab": 0.0001900668784425325,
+  "mse_gbdt": 0.00013041399669281998,
+  "diversity_over4": 8.926159668584766e-06,
+  "gap_over2": 2.9826440874856257e-05,
+  "ens_beats_best": false
+ },
+ {
+  "unit": "XJTU-R2.5",
+  "rho_resid": 0.6895246592482848,
+  "mse_tab": 5.522238146627694e-05,
+  "mse_gbdt": 5.964720972877762e-05,
+  "diversity_over4": 7.29776353451446e-06,
+  "gap_over2": 2.212414131250338e-06,
+  "ens_beats_best": true
+ },
+ {
+  "unit": "XJTU-R3",
+  "rho_resid": 0.8289832210949758,
+  "mse_tab": 4.391475370865196e-05,
+  "mse_gbdt": 6.360487541503507e-05,
+  "diversity_over4": 4.975071629792327e-06,
+  "gap_over2": 9.845060853191553e-06,
+  "ens_beats_best": false
+ },
+ {
+  "unit": "XJTU-RW",
+  "rho_resid": 0.967311780332498,
+  "mse_tab": 0.0002009165810581742,
+  "mse_gbdt": 0.00012472728119095638,
+  "diversity_over4": 4.381124309095509e-06,
+  "gap_over2": 3.80946499336089e-05,
+  "ens_beats_best": false
+ },
+ {
+  "unit": "XJTU-satellite",
+  "rho_resid": 0.7267838428542125,
+  "mse_tab": 5.484197404463585e-05,
+  "mse_gbdt": 6.040190986884242e-05,
+  "diversity_over4": 7.92969028518388e-06,
+  "gap_over2": 2.7799679121032856e-06,
+  "ens_beats_best": true
+ },
+ {
+  "unit": "TJU-1",
+  "rho_resid": 0.46891874494177943,
+  "mse_tab": 0.00013886231345144163,
+  "mse_gbdt": 0.00014666077096212369,
+  "diversity_over4": 3.6338427289703535e-05,
+  "gap_over2": 3.899228755341029e-06,
+  "ens_beats_best": true
+ },
+ {
+  "unit": "TJU-2",
+  "rho_resid": 0.41115285930680423,
+  "mse_tab": 0.00016934350551189826,
+  "mse_gbdt": 0.00013726838959322616,
+  "diversity_over4": 5.075443678346208e-05,
+  "gap_over2": 1.603755795933605e-05,
+  "ens_beats_best": true
+ },
+ {
+  "unit": "TJU-3",
+  "rho_resid": 0.7194130603889244,
+  "mse_tab": 2.2897068331184804e-05,
+  "mse_gbdt": 3.376561085605362e-05,
+  "diversity_over4": 3.0670428843360486e-06,
+  "gap_over2": 5.4342712624344076e-06,
+  "ens_beats_best": false
+ },
+ {
+  "unit": "HUST",
+  "rho_resid": 0.7247681911224201,
+  "mse_tab": 8.897028626022075e-05,
+  "mse_gbdt": 8.699393376374689e-05,
+  "diversity_over4": 1.2438358161374524e-05,
+  "gap_over2": 9.881762482369299e-07,
+  "ens_beats_best": true
+ },
+ {
+  "unit": "MIT",
+  "rho_resid": 0.6567931227104686,
+  "mse_tab": 5.194690252348845e-05,
+  "mse_gbdt": 5.675166620790744e-05,
+  "diversity_over4": 9.32566049987298e-06,
+  "gap_over2": 2.402381842209495e-06,
+  "ens_beats_best": true
+ }
+]

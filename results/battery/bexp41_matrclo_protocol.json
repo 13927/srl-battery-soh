@@ -1,0 +1,11 @@
+{
+ "gbdt|percell|raw": 0.02255708042191627,
+ "gbdt|percell|self": 0.017509874331271866,
+ "gbdt|percell|shuffled": 0.024284125194965405,
+ "gbdt|source|raw": 0.01779478958610682,
+ "gbdt|source|self": 0.01218820701458263,
+ "gbdt|source|shuffled": 0.018391885522209085,
+ "gbdt|sourcecyc|raw": 0.01805796436566288,
+ "gbdt|sourcecyc|self": 0.012167839190383445,
+ "gbdt|sourcecyc|shuffled": 0.01874340121421416
+}

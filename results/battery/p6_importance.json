@@ -1,0 +1,90 @@
+{
+ "XJTU-2C": {
+  "raw": 42.3,
+  "cycle": 35.3,
+  "lag1": 21.6,
+  "diff1": 0.1,
+  "from_first": 0.7,
+  "roll5": 0.1
+ },
+ "XJTU-3C": {
+  "raw": 5.1,
+  "cycle": 87.0,
+  "lag1": 3.4,
+  "diff1": 0.0,
+  "from_first": 4.5,
+  "roll5": 0.1
+ },
+ "XJTU-R2.5": {
+  "raw": 1.7,
+  "cycle": 93.6,
+  "lag1": 0.7,
+  "diff1": 0.0,
+  "from_first": 3.3,
+  "roll5": 0.7
+ },
+ "XJTU-R3": {
+  "raw": 7.7,
+  "cycle": 34.2,
+  "lag1": 26.9,
+  "diff1": 0.3,
+  "from_first": 30.8,
+  "roll5": 0.1
+ },
+ "XJTU-RW": {
+  "raw": 0.4,
+  "cycle": 98.4,
+  "lag1": 0.5,
+  "diff1": 0.0,
+  "from_first": 0.6,
+  "roll5": 0.0
+ },
+ "XJTU-satellite": {
+  "raw": 26.5,
+  "cycle": 35.8,
+  "lag1": 33.5,
+  "diff1": 0.1,
+  "from_first": 3.9,
+  "roll5": 0.1
+ },
+ "TJU-1": {
+  "raw": 4.4,
+  "cycle": 24.3,
+  "lag1": 23.9,
+  "diff1": 0.1,
+  "from_first": 46.2,
+  "roll5": 1.1
+ },
+ "TJU-2": {
+  "raw": 2.0,
+  "cycle": 0.8,
+  "lag1": 8.9,
+  "diff1": 0.3,
+  "from_first": 86.6,
+  "roll5": 1.4
+ },
+ "TJU-3": {
+  "raw": 1.4,
+  "cycle": 96.1,
+  "lag1": 1.9,
+  "diff1": 0.0,
+  "from_first": 0.6,
+  "roll5": 0.0
+ },
+ "HUST": {
+  "raw": 0.1,
+  "cycle": 99.4,
+  "lag1": 0.1,
+  "diff1": 0.0,
+  "from_first": 0.4,
+  "roll5": 0.0
+ },
+ "MIT": {
+  "raw": 4.0,
+  "cycle": 3.9,
+  "lag1": 2.4,
+  "diff1": 0.1,
+  "from_first": 89.3,
+  "roll5": 0.3
+ }
+}
