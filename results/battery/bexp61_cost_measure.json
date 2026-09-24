@@ -1,0 +1,219 @@
+{
+ "_env": {
+  "python": "3.14.6",
+  "numpy": "2.5.3",
+  "sklearn": "1.9.1",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpu_count": 10,
+  "threads": [
+   10
+  ],
+  "loadavg": [
+   2.65087890625,
+   3.15185546875,
+   3.03564453125
+  ],
+  "started_utc": "2026-09-23T02:43:59+00:00"
+ },
+ "cells": [
+  {
+   "unit": "XJTU-2C",
+   "view": "raw",
+   "reader": "author_offline",
+   "dim": 17,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 734,
+   "n_feat_cells_sampled": 6,
+   "fit_s": 0.7697474589804187,
+   "loadavg_at_measure": [
+    3.2392578125,
+    3.26513671875,
+    3.076171875
+   ],
+   "measured_utc": "2026-09-23T02:44:01+00:00",
+   "lat1_ms": {
+    "median": 4.234729509335011,
+    "p95": 5.169583018869162,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 5.0927123993460555,
+    "p95": 5.685098699359514,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 180.921875,
+   "peak_rss_delta_mib": 6.65625,
+   "feat_ms_per_row": {
+    "median": 0.0002703222713021118,
+    "n": 6
+   }
+  },
+  {
+   "unit": "XJTU-2C",
+   "view": "srl",
+   "reader": "author_offline",
+   "dim": 33,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 734,
+   "n_feat_cells_sampled": 6,
+   "fit_s": 0.612548082950525,
+   "loadavg_at_measure": [
+    3.2392578125,
+    3.26513671875,
+    3.076171875
+   ],
+   "measured_utc": "2026-09-23T02:44:03+00:00",
+   "lat1_ms": {
+    "median": 4.273728933185339,
+    "p95": 12.32358394190669,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.7125244602975727,
+    "p95": 5.248901402410411,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 184.734375,
+   "peak_rss_delta_mib": 10.3125,
+   "feat_ms_per_row": {
+    "median": 0.001523655613242847,
+    "n": 6
+   }
+  },
+  {
+   "unit": "XJTU-2C",
+   "view": "history",
+   "reader": "author_offline",
+   "dim": 81,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 734,
+   "n_feat_cells_sampled": 6,
+   "fit_s": 0.7364002499962226,
+   "loadavg_at_measure": [
+    3.2392578125,
+    3.26513671875,
+    3.076171875
+   ],
+   "measured_utc": "2026-09-23T02:44:05+00:00",
+   "lat1_ms": {
+    "median": 2.8078334871679544,
+    "p95": 3.7906670477241278,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.7585654695249104,
+    "p95": 4.755004965772969,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 197.21875,
+   "peak_rss_delta_mib": 24.515625,
+   "feat_ms_per_row": {
+    "median": 0.0013982077633304503,
+    "n": 6
+   }
+  },
+  {
+   "unit": "MIT",
+   "view": "raw",
+   "reader": "author_offline",
+   "dim": 17,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 14193,
+   "n_feat_cells_sampled": 38,
+   "fit_s": 0.59221858298406,
+   "loadavg_at_measure": [
+    3.0595703125,
+    3.22705078125,
+    3.06396484375
+   ],
+   "measured_utc": "2026-09-23T02:44:08+00:00",
+   "lat1_ms": {
+    "median": 2.870249969419092,
+    "p95": 3.9614579873159528,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.7672729717996845,
+    "p95": 4.912963959213812,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 237.96875,
+   "peak_rss_delta_mib": 64.03125,
+   "feat_ms_per_row": {
+    "median": 0.00014100970989152755,
+    "n": 38
+   }
+  },
+  {
+   "unit": "MIT",
+   "view": "srl",
+   "reader": "author_offline",
+   "dim": 33,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 14193,
+   "n_feat_cells_sampled": 38,
+   "fit_s": 0.6033578750211746,
+   "loadavg_at_measure": [
+    3.0595703125,
+    3.22705078125,
+    3.06396484375
+   ],
+   "measured_utc": "2026-09-23T02:44:10+00:00",
+   "lat1_ms": {
+    "median": 2.905812463723123,
+    "p95": 5.3406249498948455,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.891499488872796,
+    "p95": 5.150308652446256,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 263.40625,
+   "peak_rss_delta_mib": 89.375,
+   "feat_ms_per_row": {
+    "median": 0.001280885137496158,
+    "n": 38
+   }
+  },
+  {
+   "unit": "MIT",
+   "view": "history",
+   "reader": "author_offline",
+   "dim": 81,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 14193,
+   "n_feat_cells_sampled": 38,
+   "fit_s": 0.7121314170071855,
+   "loadavg_at_measure": [
+    3.21484375,
+    3.25634765625,
+    3.0751953125
+   ],
+   "measured_utc": "2026-09-23T02:44:13+00:00",
+   "lat1_ms": {
+    "median": 4.128062515519559,
+    "p95": 5.825208965688944,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.9203286519295943,
+    "p95": 5.256672920950223,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 327.71875,
+   "peak_rss_delta_mib": 153.515625,
+   "feat_ms_per_row": {
+    "median": 0.0013031912170402287,
+    "n": 38
+   }
+  }
+ ]
+}

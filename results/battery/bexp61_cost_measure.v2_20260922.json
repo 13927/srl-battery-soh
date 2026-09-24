@@ -1,0 +1,219 @@
+{
+ "_env": {
+  "python": "3.14.6",
+  "numpy": "2.5.3",
+  "sklearn": "1.9.1",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpu_count": 10,
+  "threads": [
+   10
+  ],
+  "loadavg": [
+   1.95263671875,
+   2.18212890625,
+   2.85791015625
+  ],
+  "started_utc": "2026-09-22T09:09:48+00:00"
+ },
+ "cells": [
+  {
+   "unit": "XJTU-2C",
+   "view": "raw",
+   "reader": "author_offline",
+   "dim": 17,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 734,
+   "n_feat_cells_sampled": 6,
+   "fit_s": 0.6960505000315607,
+   "loadavg_at_measure": [
+    2.5966796875,
+    2.3115234375,
+    2.8994140625
+   ],
+   "measured_utc": "2026-09-22T09:09:50+00:00",
+   "lat1_ms": {
+    "median": 2.9107084847055376,
+    "p95": 3.664292045868933,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.8265180819507805,
+    "p95": 5.720947342524596,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 180.875,
+   "peak_rss_delta_mib": 6.921875,
+   "feat_ms_per_row": {
+    "median": 0.00029574366440665654,
+    "n": 6
+   }
+  },
+  {
+   "unit": "XJTU-2C",
+   "view": "srl",
+   "reader": "author_offline",
+   "dim": 33,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 734,
+   "n_feat_cells_sampled": 6,
+   "fit_s": 0.6007287909742445,
+   "loadavg_at_measure": [
+    2.5966796875,
+    2.3115234375,
+    2.8994140625
+   ],
+   "measured_utc": "2026-09-22T09:09:52+00:00",
+   "lat1_ms": {
+    "median": 2.8995624743402004,
+    "p95": 4.3582499492913485,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 4.0457763930135116,
+    "p95": 4.733357400255045,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 184.921875,
+   "peak_rss_delta_mib": 10.859375,
+   "feat_ms_per_row": {
+    "median": 0.0013903475444209347,
+    "n": 6
+   }
+  },
+  {
+   "unit": "XJTU-2C",
+   "view": "history",
+   "reader": "author_offline",
+   "dim": 81,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 734,
+   "n_feat_cells_sampled": 6,
+   "fit_s": 0.7498838340397924,
+   "loadavg_at_measure": [
+    2.5966796875,
+    2.3115234375,
+    2.8994140625
+   ],
+   "measured_utc": "2026-09-22T09:09:54+00:00",
+   "lat1_ms": {
+    "median": 2.8564584790728986,
+    "p95": 3.6964999744668603,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.9615478613086452,
+    "p95": 4.667683583647886,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 198.03125,
+   "peak_rss_delta_mib": 24.234375,
+   "feat_ms_per_row": {
+    "median": 0.0014333246594797448,
+    "n": 6
+   }
+  },
+  {
+   "unit": "MIT",
+   "view": "raw",
+   "reader": "author_offline",
+   "dim": 17,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 14193,
+   "n_feat_cells_sampled": 38,
+   "fit_s": 0.8061012499965727,
+   "loadavg_at_measure": [
+    2.548828125,
+    2.30615234375,
+    2.89404296875
+   ],
+   "measured_utc": "2026-09-22T09:09:56+00:00",
+   "lat1_ms": {
+    "median": 2.957604010589421,
+    "p95": 3.960208036005497,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.9751992062520003,
+    "p95": 4.94108110160596,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 238.09375,
+   "peak_rss_delta_mib": 64.0625,
+   "feat_ms_per_row": {
+    "median": 0.0001777454052803312,
+    "n": 38
+   }
+  },
+  {
+   "unit": "MIT",
+   "view": "srl",
+   "reader": "author_offline",
+   "dim": 33,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 14193,
+   "n_feat_cells_sampled": 38,
+   "fit_s": 0.6961419159779325,
+   "loadavg_at_measure": [
+    2.548828125,
+    2.30615234375,
+    2.89404296875
+   ],
+   "measured_utc": "2026-09-22T09:09:59+00:00",
+   "lat1_ms": {
+    "median": 2.946791530121118,
+    "p95": 4.905582987703383,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 7.738179249372479,
+    "p95": 13.850219716005086,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 263.09375,
+   "peak_rss_delta_mib": 89.203125,
+   "feat_ms_per_row": {
+    "median": 0.0014512306542130576,
+    "n": 38
+   }
+  },
+  {
+   "unit": "MIT",
+   "view": "history",
+   "reader": "author_offline",
+   "dim": 81,
+   "n_ctx_rows": 2048,
+   "n_test_rows": 14193,
+   "n_feat_cells_sampled": 38,
+   "fit_s": 0.918538749916479,
+   "loadavg_at_measure": [
+    2.58447265625,
+    2.3173828125,
+    2.89453125
+   ],
+   "measured_utc": "2026-09-22T09:10:02+00:00",
+   "lat1_ms": {
+    "median": 3.0033959774300456,
+    "p95": 4.650957998819649,
+    "n": 24
+   },
+   "thr_us_row": {
+    "median": 3.9012045931485773,
+    "p95": 5.497111374097585,
+    "n": 24,
+    "batch": 1024
+   },
+   "peak_rss_mib": 317.609375,
+   "peak_rss_delta_mib": 144.34375,
+   "feat_ms_per_row": {
+    "median": 0.001392622874339504,
+    "n": 38
+   }
+  }
+ ]
+}

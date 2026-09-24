@@ -20,7 +20,12 @@ import numpy as np
 
 def cycle_scaled(n_cycles: int, scale: float = 200.0) -> np.ndarray:
     """Cycle-position feature: cycle_index / 200 (0-based, fixed scale, not
-    normalised by total life)."""
+    normalised by total life).
+
+    Note: `n_cycles` is the number of **retained records** (the sequence length
+    after the reader's row deletion), not the original row number in the released
+    file -- see the definition of t in the paper, Section 2.2.
+    """
     return (np.arange(n_cycles) / scale).reshape(-1, 1)
 
 
@@ -31,6 +36,8 @@ def cycle_author_minmax(n_cycles: int) -> np.ndarray:
     Note: this reads the cell's complete lifetime length, so it is only for
     like-for-like comparison under the reference protocol; strict
     leave-one-cell-out must use cycle_scaled instead.
+    Likewise, `n_cycles` is the number of **retained records**, not a released-file
+    row number.
     """
     ci = np.arange(n_cycles, dtype=float)
     rng = max(ci.max() - ci.min(), 1.0)

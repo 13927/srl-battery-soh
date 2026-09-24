@@ -1,0 +1,196 @@
+{
+ "_meta": {
+  "n_cells": 165,
+  "expected": 165,
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "views": [
+   "history",
+   "raw",
+   "srl"
+  ],
+  "backbone": "tabpfn",
+  "device": [
+   "cpu"
+  ],
+  "weights": [
+   "/Users/bp/Documents/GitHub/srl-battery-soh-project/external/tabpfn_weights/tabpfn-v3-regressor-v3_default.ckpt"
+  ],
+  "reader": "strict_online",
+  "cap": 2048,
+  "complete": true
+ },
+ "per_unit": {
+  "XJTU-2C": {
+   "raw": {
+    "median": 0.009300996356544002,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.010266278573972987,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.01089369439068971,
+    "n_seeds": 5
+   }
+  },
+  "XJTU-3C": {
+   "raw": {
+    "median": 0.007795360877617205,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.019803226336252446,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.014477962981179123,
+    "n_seeds": 5
+   }
+  },
+  "XJTU-R2.5": {
+   "raw": {
+    "median": 0.012511465811021357,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.012166717327172935,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.014217802081114471,
+    "n_seeds": 5
+   }
+  },
+  "XJTU-R3": {
+   "raw": {
+    "median": 0.015524756702656642,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.01607849182688282,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.01378984500143575,
+    "n_seeds": 5
+   }
+  },
+  "XJTU-RW": {
+   "raw": {
+    "median": 0.006073019967317919,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.008322495587831599,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.007308858007830994,
+    "n_seeds": 5
+   }
+  },
+  "XJTU-satellite": {
+   "raw": {
+    "median": 0.010213499506859937,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.015553660635441006,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.009260326861754604,
+    "n_seeds": 5
+   }
+  },
+  "TJU-1": {
+   "raw": {
+    "median": 0.0065531140633750306,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.00983427213085337,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.008386581258924592,
+    "n_seeds": 5
+   }
+  },
+  "TJU-2": {
+   "raw": {
+    "median": 0.004152413308547865,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.003625517741285897,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.0038700142569989037,
+    "n_seeds": 5
+   }
+  },
+  "TJU-3": {
+   "raw": {
+    "median": 0.012616255924492361,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.01361319696473277,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.01246512710103915,
+    "n_seeds": 5
+   }
+  },
+  "HUST": {
+   "raw": {
+    "median": 0.023744763372447106,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.02323121481373418,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.021408081732752333,
+    "n_seeds": 5
+   }
+  },
+  "MIT": {
+   "raw": {
+    "median": 0.0020441938993605454,
+    "n_seeds": 5
+   },
+   "srl": {
+    "median": 0.0023074534687349177,
+    "n_seeds": 5
+   },
+   "history": {
+    "median": 0.0017782297995002907,
+    "n_seeds": 5
+   }
+  }
+ },
+ "verdicts": {
+  "srl_vs_raw": {
+   "median_delta_pct": 10.37826680525288,
+   "units_improved": 3,
+   "n_units": 11
+  },
+  "history_vs_raw": {
+   "median_delta_pct": -1.1978896461653021,
+   "units_improved": 6,
+   "n_units": 11
+  }
+ }
+}

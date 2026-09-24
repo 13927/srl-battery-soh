@@ -1,0 +1,591 @@
+{
+ "_meta": {
+  "script": "bexp65_b2_availability.py",
+  "note": "raw-cycle availability check for B2 scoring rows (min raw cycle should be >= 101)",
+  "n0": 100
+ },
+ "counts": {
+  "ok": 29,
+  "excluded_identity": 6,
+  "no_raw_curve_data": 46,
+  "violation": 1
+ },
+ "cells": [
+  {
+   "unit": "XJTU-2C",
+   "cell": "2C_battery-4",
+   "n_scored_rows": 262,
+   "n_mapped": 262,
+   "raw_cycle_min": 110,
+   "raw_cycle_max": 395,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "XJTU-2C",
+   "cell": "2C_battery-8",
+   "n_scored_rows": 288,
+   "n_mapped": 288,
+   "raw_cycle_min": 112,
+   "raw_cycle_max": 419,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "XJTU-3C",
+   "cell": "3C_battery-14",
+   "n_scored_rows": 35,
+   "n_mapped": 35,
+   "raw_cycle_min": 107,
+   "raw_cycle_max": 141,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "XJTU-3C",
+   "cell": "3C_battery-4",
+   "n_scored_rows": 213,
+   "n_mapped": 213,
+   "raw_cycle_min": 103,
+   "raw_cycle_max": 321,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "XJTU-3C",
+   "cell": "3C_battery-8",
+   "n_scored_rows": 151,
+   "n_mapped": 151,
+   "raw_cycle_min": 109,
+   "raw_cycle_max": 259,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "XJTU-R2.5",
+   "cell": "R2.5_battery-4",
+   "n_scored_rows": 430,
+   "n_mapped": 430,
+   "raw_cycle_min": 104,
+   "raw_cycle_max": 556,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "XJTU-R2.5",
+   "cell": "R2.5_battery-8",
+   "n_scored_rows": 493,
+   "n_mapped": 493,
+   "raw_cycle_min": 112,
+   "raw_cycle_max": 616,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "XJTU-R3",
+   "cell": "R3_battery-4",
+   "status": "excluded_identity"
+  },
+  {
+   "unit": "XJTU-R3",
+   "cell": "R3_battery-8",
+   "status": "excluded_identity"
+  },
+  {
+   "unit": "XJTU-RW",
+   "cell": "RW_battery-4",
+   "status": "excluded_identity"
+  },
+  {
+   "unit": "XJTU-RW",
+   "cell": "RW_battery-8",
+   "status": "excluded_identity"
+  },
+  {
+   "unit": "XJTU-satellite",
+   "cell": "Sim_satellite_battery-4",
+   "status": "excluded_identity"
+  },
+  {
+   "unit": "XJTU-satellite",
+   "cell": "Sim_satellite_battery-8",
+   "status": "excluded_identity"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY25-025_1-#5",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY25-05_1-#10",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY25-05_1-#16",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY25-05_1-#2",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY25-05_1-#8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY25-1_1-#3",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY25-1_1-#9",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY45-05_1-#1",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY45-05_1-#15",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY45-05_1-#19",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY45-05_1-#24",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY45-05_1-#28",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-1",
+   "cell": "CY45-05_1-#8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY25-05_1-#12",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY25-05_1-#16",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY25-05_1-#21",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY25-05_1-#4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY35-05_1-#1",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY45-05_1-#1",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY45-05_1-#15",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY45-05_1-#19",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY45-05_1-#24",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY45-05_1-#28",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-2",
+   "cell": "CY45-05_1-#8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-3",
+   "cell": "CY25-05_2-#2",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "TJU-3",
+   "cell": "CY25-05_4-#3",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "1-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "1-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "10-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "10-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "2-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "2-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "3-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "3-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "4-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "4-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "5-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "5-7",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "6-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "6-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "7-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "7-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "8-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "8-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "9-4",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "HUST",
+   "cell": "9-8",
+   "status": "no_raw_curve_data"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-10",
+   "n_scored_rows": 890,
+   "n_mapped": 890,
+   "raw_cycle_min": 105,
+   "raw_cycle_max": 1001,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-15",
+   "n_scored_rows": 726,
+   "n_mapped": 726,
+   "raw_cycle_min": 106,
+   "raw_cycle_max": 834,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-20",
+   "n_scored_rows": 636,
+   "n_mapped": 636,
+   "raw_cycle_min": 103,
+   "raw_cycle_max": 743,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-25",
+   "n_scored_rows": 856,
+   "n_mapped": 856,
+   "raw_cycle_min": 106,
+   "raw_cycle_max": 964,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-30",
+   "n_scored_rows": 756,
+   "n_mapped": 756,
+   "raw_cycle_min": 106,
+   "raw_cycle_max": 867,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-35",
+   "n_scored_rows": 596,
+   "n_mapped": 596,
+   "raw_cycle_min": 106,
+   "raw_cycle_max": 702,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-40",
+   "n_scored_rows": 469,
+   "n_mapped": 469,
+   "raw_cycle_min": 103,
+   "raw_cycle_max": 586,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-45",
+   "n_scored_rows": 314,
+   "n_mapped": 314,
+   "raw_cycle_min": 107,
+   "raw_cycle_max": 579,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-5",
+   "n_scored_rows": 1258,
+   "n_mapped": 1091,
+   "raw_cycle_min": 101,
+   "raw_cycle_max": 1206,
+   "violations": [
+    "unmapped_rows=167"
+   ],
+   "status": "violation"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-06-30_battery-15",
+   "n_scored_rows": 359,
+   "n_mapped": 359,
+   "raw_cycle_min": 102,
+   "raw_cycle_max": 461,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-06-30_battery-20",
+   "n_scored_rows": 336,
+   "n_mapped": 336,
+   "raw_cycle_min": 102,
+   "raw_cycle_max": 438,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-06-30_battery-25",
+   "n_scored_rows": 100,
+   "n_mapped": 100,
+   "raw_cycle_min": 104,
+   "raw_cycle_max": 208,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-06-30_battery-30",
+   "n_scored_rows": 371,
+   "n_mapped": 371,
+   "raw_cycle_min": 102,
+   "raw_cycle_max": 485,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-06-30_battery-35",
+   "n_scored_rows": 375,
+   "n_mapped": 375,
+   "raw_cycle_min": 102,
+   "raw_cycle_max": 478,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-06-30_battery-40",
+   "n_scored_rows": 338,
+   "n_mapped": 338,
+   "raw_cycle_min": 102,
+   "raw_cycle_max": 439,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-06-30_battery-45",
+   "n_scored_rows": 323,
+   "n_mapped": 323,
+   "raw_cycle_min": 104,
+   "raw_cycle_max": 435,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2017-06-30_battery-5",
+   "n_scored_rows": 321,
+   "n_mapped": 321,
+   "raw_cycle_min": 102,
+   "raw_cycle_max": 423,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2018-04-12_battery-10",
+   "n_scored_rows": 871,
+   "n_mapped": 871,
+   "raw_cycle_min": 108,
+   "raw_cycle_max": 985,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2018-04-12_battery-15",
+   "n_scored_rows": 705,
+   "n_mapped": 705,
+   "raw_cycle_min": 102,
+   "raw_cycle_max": 810,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2018-04-12_battery-25",
+   "n_scored_rows": 667,
+   "n_mapped": 667,
+   "raw_cycle_min": 111,
+   "raw_cycle_max": 787,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2018-04-12_battery-30",
+   "n_scored_rows": 702,
+   "n_mapped": 702,
+   "raw_cycle_min": 102,
+   "raw_cycle_max": 810,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2018-04-12_battery-40",
+   "n_scored_rows": 312,
+   "n_mapped": 312,
+   "raw_cycle_min": 298,
+   "raw_cycle_max": 1108,
+   "violations": [],
+   "status": "ok"
+  },
+  {
+   "unit": "MIT",
+   "cell": "2018-04-12_battery-45",
+   "n_scored_rows": 260,
+   "n_mapped": 260,
+   "raw_cycle_min": 254,
+   "raw_cycle_max": 886,
+   "violations": [],
+   "status": "ok"
+  }
+ ],
+ "violations": [
+  {
+   "unit": "MIT",
+   "cell": "2017-05-12_battery-5",
+   "n_scored_rows": 1258,
+   "n_mapped": 1091,
+   "raw_cycle_min": 101,
+   "raw_cycle_max": 1206,
+   "violations": [
+    "unmapped_rows=167"
+   ],
+   "status": "violation"
+  }
+ ]
+}

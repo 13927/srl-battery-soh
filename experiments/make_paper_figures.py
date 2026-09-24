@@ -138,7 +138,16 @@ def place_labels(ax, xs, ys, labels, fontsize=6.5, leader_from=15.0, sweeps=3,
     return worst
 
 
-imp = json.load(open(RES / "p6_importance.json"))
+# W04: the importance source is now the **ten-seed mean** (bexp52), the same source as
+# Table 2's column and Figure 1b's rho. Build a view compatible with the old p6
+# structure (_{unit: {family: mean}}) so downstream consumers are unchanged.
+_B52 = json.load(open(RES / "bexp52_importance.json"))["per_unit"]
+_FAMS = ["raw", "cycle", "lag1", "diff1", "from_first", "roll5"]
+imp = {u: {f: fams[f]["mean"] for f in _FAMS if f in fams}
+       for u, fams in _B52.items()}
+imp_sd = {u: {f: fams[f]["std"] for f in _FAMS if f in fams}
+          for u, fams in _B52.items()}
+# the old single-point archive is kept as a historical record (reference only, no longer plotted): p6_importance.json
 cyc = [imp[u]["cycle"] for u in UNITS]
 ff = [imp[u]["from_first"] for u in UNITS]
 

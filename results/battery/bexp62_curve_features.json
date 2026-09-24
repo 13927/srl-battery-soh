@@ -1,0 +1,6351 @@
+{
+ "_meta": {
+  "script": "bexp62_curve_features.py",
+  "utc": "2026-09-23T05:41:33+00:00",
+  "v_grid": [
+   2.5,
+   3.5,
+   1000
+  ],
+  "n_window": 100,
+  "limit_cells": null,
+  "mit_qnom": 1.1
+ },
+ "stats": {
+  "XJTU": {
+   "n": 55,
+   "ok": 47,
+   "insufficient_cycles": 8,
+   "no_curve": 0,
+   "row_level": 31
+  },
+  "MIT": {
+   "n": 140,
+   "ok": 140,
+   "insufficient_cycles": 0,
+   "no_curve": 0,
+   "row_level": 121
+  }
+ },
+ "cross_check": {
+  "n_cells_checked": 31,
+  "cv_q_reconciled": 14,
+  "cv_time_reconciled": 16,
+  "rel_dev_median": 1.2761058999064399,
+  "mit_closure_median": 0.0015383309981535772
+ },
+ "cells": {
+  "2C_battery-1": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-1/2C_battery-1.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 390,
+   "qdiff_var_log10": -3.743067908879383,
+   "severson_info": {
+    "var": 0.00018068915675615427,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.902631805833333,
+    "cycle100": 1.9599288424999999,
+    "median_all": 1.9150098337500001
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.603476715,
+    "cv_ah_median": 0.31605266750000005,
+    "cc_s_median": 1443.12,
+    "cv_s_median": 1506.5099999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.056617049583333356,
+    "s": 877.5600000000002,
+    "i_mean": 0.23100512213196037
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3360000000000001,
+     "CV Q": 0.0559999999999998,
+     "CC charge time": 302.0999999999999,
+     "CV charge time": 860.6400000000003
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.603476715,
+     "s": 1443.12
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.31605266750000005,
+     "s": 1506.5099999999998
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.056617049583333356,
+     "s": 877.5600000000002,
+     "i_mean": 0.23100512213196037
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.011018742559527835,
+     "CV charge time (release vs tail)": 0.019659788064695854,
+     "CC Q (release vs default window)": 3.7722521279761896,
+     "CC charge time (release vs default window)": 3.776961271102285
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9150098337500001,
+     "release_capacity": 1.919,
+     "dev": 0.0020792945544554076,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "2C_battery-2": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-1/2C_battery-2.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 407,
+   "qdiff_var_log10": -3.708225777662549,
+   "severson_info": {
+    "var": 0.00019578265891190353,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8989714058333331,
+    "cycle100": 1.9564285966666664,
+    "median_all": 1.9055157774999998
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5854802279166664,
+    "cv_ah_median": 0.32376213166666673,
+    "cc_s_median": 1426.92,
+    "cv_s_median": 1544.7599999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.058466154166666645,
+    "s": 904.5,
+    "i_mean": 0.23099927272727275
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3369999999999999,
+     "CV Q": 0.0569999999999999,
+     "CC charge time": 303.2699999999999,
+     "CV charge time": 885.9300000000001
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5854802279166664,
+     "s": 1426.92
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.32376213166666673,
+     "s": 1544.7599999999998
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.058466154166666645,
+     "s": 904.5,
+     "i_mean": 0.23099927272727275
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.025722002923978065,
+     "CV charge time (release vs tail)": 0.020961024008668783,
+     "CC Q (release vs default window)": 3.704689103610287,
+     "CC charge time (release vs default window)": 3.705114254624593
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9055157774999998,
+     "release_capacity": 1.911,
+     "dev": 0.002869818158032573,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "2C_battery-3": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-1/2C_battery-3.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 393,
+   "qdiff_var_log10": -3.745464966887022,
+   "severson_info": {
+    "var": 0.00017969460280759376,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8990513008333332,
+    "cycle100": 1.9540486549999998,
+    "median_all": 1.9057617100000002
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5911823637499998,
+    "cv_ah_median": 0.31785989750000015,
+    "cc_s_median": 1432.05,
+    "cv_s_median": 1519.1999999999996
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.0574388741666667,
+    "s": 890.52,
+    "i_mean": 0.23096517602283537
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3360000000000001,
+     "CV Q": 0.0569999999999999,
+     "CC charge time": 302.10000000000014,
+     "CV charge time": 885.7199999999998
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5911823637499998,
+     "s": 1432.05
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.31785989750000015,
+     "s": 1519.1999999999996
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.0574388741666667,
+     "s": 890.52,
+     "i_mean": 0.23096517602283537
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.007699546783628157,
+     "CV charge time (release vs tail)": 0.005419319875355849,
+     "CC Q (release vs default window)": 3.7356617968749983,
+     "CC charge time (release vs default window)": 3.740317775571001
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9057617100000002,
+     "release_capacity": 1.906,
+     "dev": 0.00012502098635873679,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "2C_battery-4": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-1/2C_battery-4.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 396,
+   "qdiff_var_log10": -3.8373105214395564,
+   "severson_info": {
+    "var": 0.00014544187963204502,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8952375774999999,
+    "cycle100": 1.951886590833333,
+    "median_all": 1.9140571791666665
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5934334749999997,
+    "cv_ah_median": 0.3226559275,
+    "cc_s_median": 1434.06,
+    "cv_s_median": 1564.3200000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05919823583333332,
+    "s": 918.51,
+    "i_mean": 0.2306445586339423
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3400000000000001,
+     "CV Q": 0.0589999999999999,
+     "CC charge time": 306.1200000000001,
+     "CV charge time": 908.6400000000003
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5934334749999997,
+     "s": 1434.06
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3226559275,
+     "s": 1564.3200000000002
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05919823583333332,
+     "s": 918.51,
+     "i_mean": 0.2306445586339423
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.0033599293785325666,
+     "CV charge time (release vs tail)": 0.01086238774432081,
+     "CC Q (release vs default window)": 3.686569044117645,
+     "CC charge time (release vs default window)": 3.6846334770678144
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9140571791666665,
+     "release_capacity": 1.9184999999999999,
+     "dev": 0.00231577838589177,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "2C_battery-5": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-1/2C_battery-5.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 403,
+   "qdiff_var_log10": -3.6807633303287983,
+   "severson_info": {
+    "var": 0.00020856271402662862,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9255258616666664,
+    "cycle100": 1.954024278333333,
+    "median_all": 1.9165039199999998
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5930431862499996,
+    "cv_ah_median": 0.32618133583333314,
+    "cc_s_median": 1433.6999999999998,
+    "cv_s_median": 1576.4399999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05964178166666663,
+    "s": 927.8999999999996,
+    "i_mean": 0.2302336056009335
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3380000000000001,
+     "CV Q": 0.0589999999999999,
+     "CC charge time": 304.02,
+     "CV charge time": 920.64
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5930431862499996,
+     "s": 1433.6999999999998
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.32618133583333314,
+     "s": 1576.4399999999998
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05964178166666663,
+     "s": 927.8999999999996,
+     "i_mean": 0.2302336056009335
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.010877655367232727,
+     "CV charge time (release vs tail)": 0.007885818561000662,
+     "CC Q (release vs default window)": 3.713145521449702,
+     "CC charge time (release vs default window)": 3.715808170515097
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9165039199999998,
+     "release_capacity": 1.917,
+     "dev": 0.00025877934272312565,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "2C_battery-6": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-1/2C_battery-6.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 408,
+   "qdiff_var_log10": -3.5385766026564465,
+   "severson_info": {
+    "var": 0.00028934994046629533,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.927056425,
+    "cycle100": 1.9552834799999999,
+    "median_all": 1.9184834824999997
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5953077999999994,
+    "cv_ah_median": 0.32574470708333325,
+    "cc_s_median": 1435.74,
+    "cv_s_median": 1560.2999999999997
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05844640333333333,
+    "s": 905.7299999999998,
+    "i_mean": 0.23094971589402802
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3339999999999998,
+     "CV Q": 0.0569999999999999,
+     "CC charge time": 300.0,
+     "CV charge time": 889.6199999999999
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5953077999999994,
+     "s": 1435.74
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.32574470708333325,
+     "s": 1560.2999999999997
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05844640333333333,
+     "s": 905.7299999999998,
+     "i_mean": 0.23094971589402802
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.02537549707602512,
+     "CV charge time (release vs tail)": 0.018108855466378793,
+     "CC Q (release vs default window)": 3.7763706586826356,
+     "CC charge time (release vs default window)": 3.7858
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9184834824999997,
+     "release_capacity": 1.922,
+     "dev": 0.0018296136836629866,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "2C_battery-7": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-1/2C_battery-7.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 402,
+   "qdiff_var_log10": -3.4801922018058646,
+   "severson_info": {
+    "var": 0.0003309846081809507,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9541814191666664,
+    "cycle100": 1.9532667074999996,
+    "median_all": 1.9168115258333331
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5872881649999997,
+    "cv_ah_median": 0.32829077333333334,
+    "cc_s_median": 1428.54,
+    "cv_s_median": 1585.56
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05963378958333334,
+    "s": 924.3000000000002,
+    "i_mean": 0.23093910355083064
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3379999999999999,
+     "CV Q": 0.0589999999999999,
+     "CC charge time": 304.08000000000004,
+     "CV charge time": 919.9799999999996
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5872881649999997,
+     "s": 1428.54
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.32829077333333334,
+     "s": 1585.56
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05963378958333334,
+     "s": 924.3000000000002,
+     "i_mean": 0.23093910355083064
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.010742196327685439,
+     "CV charge time (release vs tail)": 0.0046957542555279685,
+     "CC Q (release vs default window)": 3.6961188313609474,
+     "CC charge time (release vs default window)": 3.697908445146014
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9168115258333331,
+     "release_capacity": 1.917,
+     "dev": 9.83172491741766e-05,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "2C_battery-8": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-1/2C_battery-8.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 420,
+   "qdiff_var_log10": -3.5136140114500414,
+   "severson_info": {
+    "var": 0.0003064686029170414,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9103949524999997,
+    "cycle100": 1.9484407641666666,
+    "median_all": 1.9057957591666663
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5757768341666663,
+    "cv_ah_median": 0.3362472966666668,
+    "cc_s_median": 1418.1599999999999,
+    "cv_s_median": 1638.7800000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.061288742500000014,
+    "s": 953.25,
+    "i_mean": 0.23065266968325793
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.347,
+     "CV Q": 0.0619999999999998,
+     "CC charge time": 311.9400000000003,
+     "CV charge time": 960.7800000000002
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5757768341666663,
+     "s": 1418.1599999999999
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3362472966666668,
+     "s": 1638.7800000000002
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.061288742500000014,
+     "s": 953.25,
+     "i_mean": 0.23065266968325793
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.011471895161286884,
+     "CV charge time (release vs tail)": 0.007837382127022001,
+     "CC Q (release vs default window)": 3.5411436143131594,
+     "CC charge time (release vs default window)": 3.5462588959415227
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9057957591666663,
+     "release_capacity": 1.908,
+     "dev": 0.0011552624912649857,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-1": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-1.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 299,
+   "qdiff_var_log10": -3.415673101353893,
+   "severson_info": {
+    "var": 0.0003839961752478479,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9067019358333333,
+    "cycle100": 1.9407435791666667,
+    "median_all": 1.9066844733333332
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5184217191666667,
+    "cv_ah_median": 0.38820025333333336,
+    "cc_s_median": 911.04,
+    "cv_s_median": 1417.3799999999997
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.049008965,
+    "s": 761.4000000000003,
+    "i_mean": 0.23099258202567763
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.375,
+     "CV Q": 0.0489999999999999,
+     "CC charge time": 225.24,
+     "CV charge time": 758.46
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5184217191666667,
+     "s": 911.04
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.38820025333333336,
+     "s": 1417.3799999999997
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.049008965,
+     "s": 761.4000000000003,
+     "i_mean": 0.23099258202567763
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.00018295918367558714,
+     "CV charge time (release vs tail)": 0.003876275611107088,
+     "CC Q (release vs default window)": 3.0491245844444443,
+     "CC charge time (release vs default window)": 3.0447522642514646
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9066844733333332,
+     "release_capacity": 1.91,
+     "dev": 0.001735877835951141,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-10": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-10.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 164,
+   "qdiff_var_log10": -3.43784442144176,
+   "severson_info": {
+    "var": 0.0003648846371858675,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8531806625,
+    "cycle100": 1.8676011291666665,
+    "median_all": 1.8707446279166668
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4738167266666664,
+    "cv_ah_median": 0.40357825541666664,
+    "cc_s_median": 884.28,
+    "cv_s_median": 1750.1399999999999
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06569148791666667,
+    "s": 1036.2,
+    "i_mean": 0.23041100482660765
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.413,
+     "CV Q": 0.0649999999999999,
+     "CC charge time": 247.44000000000003,
+     "CV charge time": 1017.9300000000002
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.4738167266666664,
+     "s": 884.28
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.40357825541666664,
+     "s": 1750.1399999999999
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06569148791666667,
+     "s": 1036.2,
+     "i_mean": 0.23041100482660765
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.010638275641027106,
+     "CV charge time (release vs tail)": 0.017948188971736626,
+     "CC Q (release vs default window)": 2.5685635028248583,
+     "CC charge time (release vs default window)": 2.573714839961202
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8707446279166668,
+     "release_capacity": 1.88,
+     "dev": 0.004923070257092046,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-11": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-11.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 131,
+   "qdiff_var_log10": -2.962187599723699,
+   "severson_info": {
+    "var": 0.0010909689749711022,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8530547775,
+    "cycle100": 1.81525763,
+    "median_all": 1.8679745966666663
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4790247195833333,
+    "cv_ah_median": 0.39137056750000004,
+    "cc_s_median": 887.4000000000001,
+    "cv_s_median": 1722.48
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06896554916666667,
+    "s": 1026.96,
+    "i_mean": 0.24149328512396698
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.4209999999999998,
+     "CV Q": 0.068,
+     "CC charge time": 252.48,
+     "CV charge time": 1016.34
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.4790247195833333,
+     "s": 887.4000000000001
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.39137056750000004,
+     "s": 1722.48
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06896554916666667,
+     "s": 1026.96,
+     "i_mean": 0.24149328512396698
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.014199252450980332,
+     "CV charge time (release vs tail)": 0.01044925910620462,
+     "CC Q (release vs default window)": 2.5131228493665887,
+     "CC charge time (release vs default window)": 2.514733840304183
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8679745966666663,
+     "release_capacity": 1.872,
+     "dev": 0.0021503222934475363,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-12": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-12.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 212,
+   "qdiff_var_log10": -3.87459531126985,
+   "severson_info": {
+    "var": 0.00013347646268892243,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8413365799999994,
+    "cycle100": 1.8932191800000002,
+    "median_all": 1.8738470104166662
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4872444666666664,
+    "cv_ah_median": 0.3896195245833334,
+    "cc_s_median": 892.3199999999999,
+    "cv_s_median": 1589.9699999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.057828035833333326,
+    "s": 902.7299999999999,
+    "i_mean": 0.23057887053126336
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.397,
+     "CV Q": 0.0569999999999999,
+     "CC charge time": 238.14,
+     "CV charge time": 892.9799999999998
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.4872444666666664,
+     "s": 892.3199999999999
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3896195245833334,
+     "s": 1589.9699999999998
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.057828035833333326,
+     "s": 902.7299999999999,
+     "i_mean": 0.23057887053126336
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.01452694444444613,
+     "CV charge time (release vs tail)": 0.010918497614728344,
+     "CC Q (release vs default window)": 2.7462077246011747,
+     "CC charge time (release vs default window)": 2.747039556563366
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8738470104166662,
+     "release_capacity": 1.882,
+     "dev": 0.004332087982642752,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-13": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-13.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 226,
+   "qdiff_var_log10": -3.9867676906242018,
+   "severson_info": {
+    "var": 0.00010309374338899337,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8464919383333331,
+    "cycle100": 1.905719665,
+    "median_all": 1.8825021999999998
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4964261575,
+    "cv_ah_median": 0.3884596979166666,
+    "cc_s_median": 897.84,
+    "cv_s_median": 1625.1
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.060061872916666675,
+    "s": 941.4899999999999,
+    "i_mean": 0.22875553121321945
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.393,
+     "CV Q": 0.0589999999999999,
+     "CC charge time": 236.04,
+     "CV charge time": 931.3200000000002
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.4964261575,
+     "s": 897.84
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3884596979166666,
+     "s": 1625.1
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.060061872916666675,
+     "s": 941.4899999999999,
+     "i_mean": 0.22875553121321945
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.017997846045199616,
+     "CV charge time (release vs tail)": 0.0109199845380747,
+     "CC Q (release vs default window)": 2.8077001463104323,
+     "CC charge time (release vs default window)": 2.803762074224708
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8825021999999998,
+     "release_capacity": 1.889,
+     "dev": 0.0034398094229752354,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-14": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-14.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 147,
+   "qdiff_var_log10": -3.259634790083785,
+   "severson_info": {
+    "var": 0.000550003191926594,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8447224949999999,
+    "cycle100": 1.8444265783333331,
+    "median_all": 1.8649972824999999
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.47491460625,
+    "cv_ah_median": 0.3914402333333332,
+    "cc_s_median": 884.94,
+    "cv_s_median": 1693.3200000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06619414666666668,
+    "s": 1012.8000000000002,
+    "i_mean": 0.23760255591054313
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.415,
+     "CV Q": 0.064,
+     "CC charge time": 249.36,
+     "CV charge time": 974.7000000000004
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.47491460625,
+     "s": 884.94
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3914402333333332,
+     "s": 1693.3200000000002
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06619414666666668,
+     "s": 1012.8000000000002,
+     "i_mean": 0.23760255591054313
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.034283541666666785,
+     "CV charge time (release vs tail)": 0.03908895044629094,
+     "CC Q (release vs default window)": 2.5540110993975906,
+     "CC charge time (release vs default window)": 2.548845043310876
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8649972824999999,
+     "release_capacity": 1.868,
+     "dev": 0.0016074504817988498,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-15": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-15.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 168,
+   "qdiff_var_log10": -3.475754775438439,
+   "severson_info": {
+    "var": 0.0003343837966815363,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8353810441666663,
+    "cycle100": 1.8476397841666663,
+    "median_all": 1.8502564837499997
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4549264758333331,
+    "cv_ah_median": 0.4040464958333334,
+    "cc_s_median": 872.9399999999999,
+    "cv_s_median": 1727.31
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06539138625000002,
+    "s": 1001.49,
+    "i_mean": 0.2352641261164995
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.413,
+     "CV Q": 0.0649999999999999,
+     "CC charge time": 247.74,
+     "CV charge time": 995.6400000000004
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.4549264758333331,
+     "s": 872.9399999999999
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.4040464958333334,
+     "s": 1727.31
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06539138625000002,
+     "s": 1001.49,
+     "i_mean": 0.2352641261164995
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.006021326923078646,
+     "CV charge time (release vs tail)": 0.005875617693141663,
+     "CC Q (release vs default window)": 2.522824396690879,
+     "CC charge time (release vs default window)": 2.5236134657302007
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8502564837499997,
+     "release_capacity": 1.855,
+     "dev": 0.0025571516172508066,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-2": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-2.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 292,
+   "qdiff_var_log10": -3.381652349771712,
+   "severson_info": {
+    "var": 0.00041528634393744174,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9189212116666665,
+    "cycle100": 1.9515625500000002,
+    "median_all": 1.9163550104166667
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5175882016666669,
+    "cv_ah_median": 0.40045448916666665,
+    "cc_s_median": 910.5600000000001,
+    "cv_s_median": 1562.73
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.055384227083333334,
+    "s": 875.07,
+    "i_mean": 0.2271489298226605
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3819999999999999,
+     "CV Q": 0.0549999999999999,
+     "CC charge time": 229.38000000000005,
+     "CV charge time": 873.8399999999997
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5175882016666669,
+     "s": 910.5600000000001
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.40045448916666665,
+     "s": 1562.73
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.055384227083333334,
+     "s": 875.07,
+     "i_mean": 0.2271489298226605
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.006985946969698763,
+     "CV charge time (release vs tail)": 0.0014075803350731939,
+     "CC Q (release vs default window)": 2.972743983420595,
+     "CC charge time (release vs default window)": 2.9696573371697617
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9163550104166667,
+     "release_capacity": 1.9235,
+     "dev": 0.0037145773763105363,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-3": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-3.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 286,
+   "qdiff_var_log10": -3.4761902078243225,
+   "severson_info": {
+    "var": 0.0003340487047719494,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9134454524999998,
+    "cycle100": 1.9597066274999997,
+    "median_all": 1.9461048954166666
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5577248324999997,
+    "cv_ah_median": 0.37461916124999983,
+    "cc_s_median": 934.62,
+    "cv_s_median": 1415.2799999999997
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05020938708333331,
+    "s": 793.3499999999997,
+    "i_mean": 0.22765743837687752
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3620000000000001,
+     "CV Q": 0.0489999999999999,
+     "CC charge time": 217.31999999999996,
+     "CV charge time": 767.07
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5577248324999997,
+     "s": 934.62
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.37461916124999983,
+     "s": 1415.2799999999997
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05020938708333331,
+     "s": 793.3499999999997,
+     "i_mean": 0.22765743837687752
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.02468136904762064,
+     "CV charge time (release vs tail)": 0.034260237005748664,
+     "CC Q (release vs default window)": 3.3031072720994454,
+     "CC charge time (release vs default window)": 3.300662617338488
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9461048954166666,
+     "release_capacity": 1.933,
+     "dev": 0.006779563071219139,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-4": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-4.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 322,
+   "qdiff_var_log10": -3.341072081889204,
+   "severson_info": {
+    "var": 0.0004559612316494943,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.90323822,
+    "cycle100": 1.9304635499999996,
+    "median_all": 1.8861025954166666
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4946414824999998,
+    "cv_ah_median": 0.3913669129166666,
+    "cc_s_median": 896.76,
+    "cv_s_median": 1441.7400000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.050359337500000004,
+    "s": 785.3100000000001,
+    "i_mean": 0.2301307280104468
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.373,
+     "CV Q": 0.05,
+     "CC charge time": 224.22000000000003,
+     "CV charge time": 782.3999999999996
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.4946414824999998,
+     "s": 896.76
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3913669129166666,
+     "s": 1441.7400000000002
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.050359337500000004,
+     "s": 785.3100000000001,
+     "i_mean": 0.2301307280104468
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.0071867500000000195,
+     "CV charge time (release vs tail)": 0.0037193251533747754,
+     "CC Q (release vs default window)": 3.0070817225201067,
+     "CC charge time (release vs default window)": 2.999464811345999
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8861025954166666,
+     "release_capacity": 1.887,
+     "dev": 0.0004755721162339309,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-5": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-5.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 297,
+   "qdiff_var_log10": -3.355215838066952,
+   "severson_info": {
+    "var": 0.00044135104776064617,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9106086799999997,
+    "cycle100": 1.939200683333333,
+    "median_all": 1.904054663333333
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.517525680833333,
+    "cv_ah_median": 0.3881216866666666,
+    "cc_s_median": 910.5,
+    "cv_s_median": 1458.66
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05162165666666667,
+    "s": 808.74,
+    "i_mean": 0.22924744707347447
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.373,
+     "CV Q": 0.0509999999999999,
+     "CC charge time": 223.79999999999995,
+     "CV charge time": 805.74
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.517525680833333,
+     "s": 910.5
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3881216866666666,
+     "s": 1458.66
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05162165666666667,
+     "s": 808.74,
+     "i_mean": 0.22924744707347447
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.012189346405230781,
+     "CV charge time (release vs tail)": 0.0037232854270608383,
+     "CC Q (release vs default window)": 3.068433460679177,
+     "CC charge time (release vs default window)": 3.0683646112600544
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.904054663333333,
+     "release_capacity": 1.909,
+     "dev": 0.00259053780338762,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-6": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-6.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 322,
+   "qdiff_var_log10": -3.4409677250449264,
+   "severson_info": {
+    "var": 0.00036226991980627343,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.903640980833333,
+    "cycle100": 1.9413400658333333,
+    "median_all": 1.9076326795833332
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5125084216666664,
+    "cv_ah_median": 0.39605640708333334,
+    "cc_s_median": 907.5,
+    "cv_s_median": 1493.5500000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05292492083333333,
+    "s": 825.9899999999999,
+    "i_mean": 0.23025943345230873
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.377,
+     "CV Q": 0.0529999999999999,
+     "CC charge time": 225.78,
+     "CV charge time": 822.7800000000002
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5125084216666664,
+     "s": 907.5
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.39605640708333334,
+     "s": 1493.5500000000002
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05292492083333333,
+     "s": 825.9899999999999,
+     "i_mean": 0.23025943345230873
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.0014165880503126094,
+     "CV charge time (release vs tail)": 0.003901407423612259,
+     "CC Q (release vs default window)": 3.011958678160919,
+     "CC charge time (release vs default window)": 3.019399415360085
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9076326795833332,
+     "release_capacity": 1.9104999999999999,
+     "dev": 0.0015008219924976226,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-7": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-7.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 319,
+   "qdiff_var_log10": -3.4583217640213504,
+   "severson_info": {
+    "var": 0.0003480793313178743,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9133668441666667,
+    "cycle100": 1.9657278158333331,
+    "median_all": 1.9247922283333332
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5520229520833329,
+    "cv_ah_median": 0.3758510633333334,
+    "cc_s_median": 931.2,
+    "cv_s_median": 1388.4599999999996
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.049178038333333327,
+    "s": 776.1000000000001,
+    "i_mean": 0.22690693481276003
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3599999999999999,
+     "CV Q": 0.0489999999999999,
+     "CC charge time": 215.8800000000001,
+     "CV charge time": 768.1799999999998
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5520229520833329,
+     "s": 931.2
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3758510633333334,
+     "s": 1388.4599999999996
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.049178038333333327,
+     "s": 776.1000000000001,
+     "i_mean": 0.22690693481276003
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.003633435374151614,
+     "CV charge time (release vs tail)": 0.0103100835741627,
+     "CC Q (release vs default window)": 3.311174866898148,
+     "CC charge time (release vs default window)": 3.3135075041689808
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9247922283333332,
+     "release_capacity": 1.929,
+     "dev": 0.0021813227924659716,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-8": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-8.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 270,
+   "qdiff_var_log10": -3.294755153774668,
+   "severson_info": {
+    "var": 0.0005072766197132626,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9068725891666667,
+    "cycle100": 1.9374151683333332,
+    "median_all": 1.9080016712499996
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.516828716666666,
+    "cv_ah_median": 0.39311480416666666,
+    "cc_s_median": 910.0799999999999,
+    "cv_s_median": 1539.3
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05436562124999998,
+    "s": 845.13,
+    "i_mean": 0.2313958023078116
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3860000000000001,
+     "CV Q": 0.054,
+     "CC charge time": 231.66,
+     "CV charge time": 840.8400000000001
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.516828716666666,
+     "s": 910.0799999999999
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.39311480416666666,
+     "s": 1539.3
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05436562124999998,
+     "s": 845.13,
+     "i_mean": 0.2313958023078116
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.006770763888888565,
+     "CV charge time (release vs tail)": 0.0051020408163263515,
+     "CC Q (release vs default window)": 2.929608074265973,
+     "CC charge time (release vs default window)": 2.9285159285159286
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9080016712499996,
+     "release_capacity": 1.912,
+     "dev": 0.0020911761244771336,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "3C_battery-9": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-2/3C_battery-9.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 287,
+   "qdiff_var_log10": -3.6835768331531487,
+   "severson_info": {
+    "var": 0.00020721594313297248,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8487113749999995,
+    "cycle100": 1.9055087199999998,
+    "median_all": 1.870140843333333
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4744679833333332,
+    "cv_ah_median": 0.3990477333333334,
+    "cc_s_median": 884.6700000000001,
+    "cv_s_median": 1553.6999999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05554099999999999,
+    "s": 868.3799999999999,
+    "i_mean": 0.22971387559808615
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.393,
+     "CV Q": 0.0550000000000001,
+     "CC charge time": 235.92,
+     "CV charge time": 859.8000000000002
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.4744679833333332,
+     "s": 884.6700000000001
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3990477333333334,
+     "s": 1553.6999999999998
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.05554099999999999,
+     "s": 868.3799999999999,
+     "i_mean": 0.22971387559808615
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.009836363636361723,
+     "CV charge time (release vs tail)": 0.009979064898813327,
+     "CC Q (release vs default window)": 2.7518269296013567,
+     "CC charge time (release vs default window)": 2.749872838250255
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.870140843333333,
+     "release_capacity": 1.873,
+     "dev": 0.001526511834846192,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R2.5_battery-1": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-3/R2.5_battery-1.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 592,
+   "qdiff_var_log10": -3.654306642755137,
+   "severson_info": {
+    "var": 0.00022166307683497608,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8855057300000004,
+    "cycle100": 1.9652470558333335,
+    "median_all": 1.9022500358333332
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5637161808333333,
+    "cv_ah_median": 0.3401240916666665,
+    "cc_s_median": 1407.36,
+    "cv_s_median": 1683.9300000000003
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06366118458333328,
+    "s": 997.5900000000001,
+    "i_mean": 0.22992182572471254
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3299999999999998,
+     "CV Q": 0.0629999999999999,
+     "CC charge time": 296.7900000000001,
+     "CV charge time": 985.11
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5637161808333333,
+     "s": 1407.36
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3401240916666665,
+     "s": 1683.9300000000003
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06366118458333328,
+     "s": 997.5900000000001,
+     "i_mean": 0.22992182572471254
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.010494993386244093,
+     "CV charge time (release vs tail)": 0.012668635989889588,
+     "CC Q (release vs default window)": 3.738533881313134,
+     "CC charge time (release vs default window)": 3.7419387445668635
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9022500358333332,
+     "release_capacity": 1.905,
+     "dev": 0.0014435507436571342,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R2.5_battery-2": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-3/R2.5_battery-2.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 552,
+   "qdiff_var_log10": -3.4884499821492456,
+   "severson_info": {
+    "var": 0.00032475064166161306,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8891769274999999,
+    "cycle100": 1.9629753775,
+    "median_all": 1.9058822537499998
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5683397924999998,
+    "cv_ah_median": 0.34073984624999987,
+    "cc_s_median": 1411.44,
+    "cv_s_median": 1717.23
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06512693333333333,
+    "s": 1019.9100000000001,
+    "i_mean": 0.23033983401752867
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3329999999999999,
+     "CV Q": 0.06399999999999989,
+     "CC charge time": 299.81999999999994,
+     "CV charge time": 998.22
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5683397924999998,
+     "s": 1411.44
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.34073984624999987,
+     "s": 1717.23
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06512693333333333,
+     "s": 1019.9100000000001,
+     "i_mean": 0.23033983401752867
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.017608333333335044,
+     "CV charge time (release vs tail)": 0.021728677045140404,
+     "CC Q (release vs default window)": 3.709729106606607,
+     "CC charge time (release vs default window)": 3.707624574744848
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9058822537499998,
+     "release_capacity": 1.913,
+     "dev": 0.003720724647151217,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R2.5_battery-3": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-3/R2.5_battery-3.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 667,
+   "qdiff_var_log10": -3.642514010122166,
+   "severson_info": {
+    "var": 0.00022776447649943974,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.888104093333333,
+    "cycle100": 1.9674271774999998,
+    "median_all": 1.8909269166666662
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5391931329166666,
+    "cv_ah_median": 0.3515397866666667,
+    "cc_s_median": 1385.22,
+    "cv_s_median": 1791.96
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06753094583333334,
+    "s": 1057.8600000000001,
+    "i_mean": 0.2302258246936852
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3369999999999999,
+     "CV Q": 0.0669999999999999,
+     "CC charge time": 303.0,
+     "CV charge time": 1056.3599999999997
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5391931329166666,
+     "s": 1385.22
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3515397866666667,
+     "s": 1791.96
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06753094583333334,
+     "s": 1057.8600000000001,
+     "i_mean": 0.2302258246936852
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.007924564676618442,
+     "CV charge time (release vs tail)": 0.001419970464614767,
+     "CC Q (release vs default window)": 3.5673386733432255,
+     "CC charge time (release vs default window)": 3.5716831683168317
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8909269166666662,
+     "release_capacity": 1.892,
+     "dev": 0.0005671687808317488,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R2.5_battery-4": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-3/R2.5_battery-4.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 557,
+   "qdiff_var_log10": -3.3226446533180662,
+   "severson_info": {
+    "var": 0.0004757243119735376,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.9016136624999997,
+    "cycle100": 1.9616749433333327,
+    "median_all": 1.9027411899999995
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.563236889583333,
+    "cv_ah_median": 0.3383847183333334,
+    "cc_s_median": 1406.88,
+    "cv_s_median": 1726.2599999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06555494249999999,
+    "s": 1022.6399999999999,
+    "i_mean": 0.23061842783505151
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.33299999999999996,
+     "CV Q": 0.064,
+     "CC charge time": 300.0,
+     "CV charge time": 1003.1699999999996
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.563236889583333,
+     "s": 1406.88
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3383847183333334,
+     "s": 1726.2599999999998
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06555494249999999,
+     "s": 1022.6399999999999,
+     "i_mean": 0.23061842783505151
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.024295976562499835,
+     "CV charge time (release vs tail)": 0.019408475133826035,
+     "CC Q (release vs default window)": 3.6944050738238237,
+     "CC charge time (release vs default window)": 3.6896000000000004
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9027411899999995,
+     "release_capacity": 1.908,
+     "dev": 0.0027561897274635174,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R2.5_battery-5": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-3/R2.5_battery-5.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 562,
+   "qdiff_var_log10": -3.665069621448285,
+   "severson_info": {
+    "var": 0.00021623718476034243,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.882416673333333,
+    "cycle100": 1.961097935833333,
+    "median_all": 1.9087243858333327
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.565038553333333,
+    "cv_ah_median": 0.3469336912499999,
+    "cc_s_median": 1408.5,
+    "cv_s_median": 1776.51
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06812060874999999,
+    "s": 1067.4899999999998,
+    "i_mean": 0.22981780270172014
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3329999999999999,
+     "CV Q": 0.06749999999999995,
+     "CC charge time": 299.75999999999976,
+     "CV charge time": 1054.47
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.565038553333333,
+     "s": 1408.5
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3469336912499999,
+     "s": 1776.51
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06812060874999999,
+     "s": 1067.4899999999998,
+     "i_mean": 0.22981780270172014
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.009194203703704346,
+     "CV charge time (release vs tail)": 0.012347435204415256,
+     "CC Q (release vs default window)": 3.699815475475476,
+     "CC charge time (release vs default window)": 3.6987590072057683
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": false,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9087243858333327,
+     "release_capacity": 1.9125,
+     "dev": 0.0019741773420483056,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R2.5_battery-6": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-3/R2.5_battery-6.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 542,
+   "qdiff_var_log10": -3.552236495083914,
+   "severson_info": {
+    "var": 0.0002803906354789272,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8827185824999995,
+    "cycle100": 1.9515483466666663,
+    "median_all": 1.894154837083333
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.550580403333333,
+    "cv_ah_median": 0.3444512445833335,
+    "cc_s_median": 1395.48,
+    "cv_s_median": 1775.3100000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06784037125,
+    "s": 1052.5500000000002,
+    "i_mean": 0.2308049514106583
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3369999999999999,
+     "CV Q": 0.068,
+     "CC charge time": 303.0,
+     "CV charge time": 1053.0600000000004
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.550580403333333,
+     "s": 1395.48
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3444512445833335,
+     "s": 1775.3100000000002
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06784037125,
+     "s": 1052.5500000000002,
+     "i_mean": 0.2308049514106583
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.0023474816176470813,
+     "CV charge time (release vs tail)": 0.0004843028887244963,
+     "CC Q (release vs default window)": 3.601128793273986,
+     "CC charge time (release vs default window)": 3.6055445544554456
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.894154837083333,
+     "release_capacity": 1.891,
+     "dev": 0.001668343248721826,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R2.5_battery-7": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-3/R2.5_battery-7.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 527,
+   "qdiff_var_log10": -3.4952959451227477,
+   "severson_info": {
+    "var": 0.00031967160009060025,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8803400874999998,
+    "cycle100": 1.950243495833333,
+    "median_all": 1.9005095666666663
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5564432,
+    "cv_ah_median": 0.3453060916666667,
+    "cc_s_median": 1400.76,
+    "cv_s_median": 1793.76
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06921016666666667,
+    "s": 1062.9000000000005,
+    "i_mean": 0.23124045801526716
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3389999999999999,
+     "CV Q": 0.068,
+     "CC charge time": 305.10000000000014,
+     "CV charge time": 1057.56
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5564432,
+     "s": 1400.76
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.3453060916666667,
+     "s": 1793.76
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06921016666666667,
+     "s": 1062.9000000000005,
+     "i_mean": 0.23124045801526716
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.017796568627450954,
+     "CV charge time (release vs tail)": 0.0050493589016231705,
+     "CC Q (release vs default window)": 3.5912778761061954,
+     "CC charge time (release vs default window)": 3.591150442477874
+    },
+    "reconciled": {
+     "CV Q": false,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.9005095666666663,
+     "release_capacity": 1.904,
+     "dev": 0.0018332107843138936,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R2.5_battery-8": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-3/R2.5_battery-8.mat",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "ratio_median": 1.0,
+   "n_cycles": 617,
+   "qdiff_var_log10": -3.465042297145696,
+   "severson_info": {
+    "var": 0.00034273440506538296,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8931593424999997,
+    "cycle100": 1.9589062183333332,
+    "median_all": 1.8915774683333333
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5430435191666665,
+    "cv_ah_median": 0.34765933833333357,
+    "cc_s_median": 1388.67,
+    "cv_s_median": 1792.08
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06866140666666667,
+    "s": 1074.0600000000004,
+    "i_mean": 0.23001108343711085
+   },
+   "cross_check": {
+    "release_medians": {
+     "CC Q": 0.3349999999999999,
+     "CV Q": 0.068,
+     "CC charge time": 301.0799999999997,
+     "CV charge time": 1071.0
+    },
+    "publisher_default_CC_median": {
+     "Ah": 1.5430435191666665,
+     "s": 1388.67
+    },
+    "publisher_default_CV_median": {
+     "Ah": 0.34765933833333357,
+     "s": 1792.08
+    },
+    "tail_I_le_0.5_median": {
+     "ah": 0.06866140666666667,
+     "s": 1074.0600000000004,
+     "i_mean": 0.23001108343711085
+    },
+    "rel_dev": {
+     "CV Q (release vs tail)": 0.009726568627451023,
+     "CV charge time (release vs tail)": 0.002857142857143231,
+     "CC Q (release vs default window)": 3.606100057213931,
+     "CC charge time (release vs default window)": 3.612295735352735
+    },
+    "reconciled": {
+     "CV Q": true,
+     "CV charge time": true,
+     "CC Q": false,
+     "CC charge time": false
+    },
+    "reason": "CV column = charge-segment tail with I<=0.5A (reproducible); the CC column window rule is not public (default definition ~1.61Ah/~1451s disagrees with the release ~0.35Ah/~315s)",
+    "charge_vs_label": {
+     "mine_charge_Ah": 1.8915774683333333,
+     "release_capacity": 1.891,
+     "dev": 0.0003053772254538738,
+     "note": "total charge capacity vs the discharge label (same magnitude expected; not equal)"
+    }
+   },
+   "status": "ok"
+  },
+  "R3_battery-1": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-4/R3_battery-1.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0045441622283455,
+   "n_cycles": 799,
+   "qdiff_var_log10": -3.9108031306453923,
+   "severson_info": {
+    "var": 0.00012279957658543425,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8718959691666663,
+    "cycle100": 1.9231196566666666,
+    "median_all": 1.8217768566666666
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4782321587499996,
+    "cv_ah_median": 0.34206132000000006,
+    "cc_s_median": 1330.3799999999999,
+    "cv_s_median": 1653.0000000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.061750783333333364,
+    "s": 971.1600000000003,
+    "i_mean": 0.2289792140641158
+   },
+   "status": "ok"
+  },
+  "R3_battery-2": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-4/R3_battery-2.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0045263596601124,
+   "n_cycles": 673,
+   "qdiff_var_log10": -3.9409478752388223,
+   "severson_info": {
+    "var": 0.00011456504361049275,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8756163625,
+    "cycle100": 1.9244089608333332,
+    "median_all": 1.8454791766666667
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4989493245833334,
+    "cv_ah_median": 0.3468615466666668,
+    "cc_s_median": 1349.04,
+    "cv_s_median": 1726.5600000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06462478916666667,
+    "s": 1013.4000000000001,
+    "i_mean": 0.22986112759643915
+   },
+   "status": "ok"
+  },
+  "R3_battery-3": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-4/R3_battery-3.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0046018364094746,
+   "n_cycles": 673,
+   "qdiff_var_log10": -4.136625747041734,
+   "severson_info": {
+    "var": 7.300863906705065e-05,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8856184933333333,
+    "cycle100": 1.9350060525000004,
+    "median_all": 1.8527190908333335
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.5024304062499998,
+    "cv_ah_median": 0.3491181558333333,
+    "cc_s_median": 1352.1,
+    "cv_s_median": 1777.7999999999997
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06746333500000001,
+    "s": 1078.7999999999997,
+    "i_mean": 0.22551708015267177
+   },
+   "status": "ok"
+  },
+  "R3_battery-4": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-4/R3_battery-4.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0047062444940145,
+   "n_cycles": 727,
+   "qdiff_var_log10": -4.002632241694007,
+   "severson_info": {
+    "var": 9.939573700829118e-05,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8863987208333333,
+    "cycle100": 1.9357007533333332,
+    "median_all": 1.8386884033333333
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4732723679166668,
+    "cv_ah_median": 0.3647982408333334,
+    "cc_s_median": 1325.88,
+    "cv_s_median": 1881.0600000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.0718896741666667,
+    "s": 1154.8799999999997,
+    "i_mean": 0.22406997319034852
+   },
+   "status": "ok"
+  },
+  "R3_battery-5": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-4/R3_battery-5.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.004679228237677,
+   "n_cycles": 739,
+   "qdiff_var_log10": -3.574754512031353,
+   "severson_info": {
+    "var": 0.0002662229478248046,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8737848991666668,
+    "cycle100": 1.9186664108333333,
+    "median_all": 1.8225026116666663
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4677725945833333,
+    "cv_ah_median": 0.35350953083333336,
+    "cc_s_median": 1320.93,
+    "cv_s_median": 1740.42
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06551217916666667,
+    "s": 1025.88,
+    "i_mean": 0.22997266602502406
+   },
+   "status": "ok"
+  },
+  "R3_battery-6": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-4/R3_battery-6.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.004691491617271,
+   "n_cycles": 715,
+   "qdiff_var_log10": -3.9427050591971593,
+   "severson_info": {
+    "var": 0.00011410244241841153,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8715280400000003,
+    "cycle100": 1.921354684166667,
+    "median_all": 1.829506421666667
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4708963333333336,
+    "cv_ah_median": 0.35740817333333325,
+    "cc_s_median": 1323.8400000000001,
+    "cv_s_median": 1787.8799999999999
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06766100666666666,
+    "s": 1057.7400000000002,
+    "i_mean": 0.23018556085918854
+   },
+   "status": "ok"
+  },
+  "R3_battery-7": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-4/R3_battery-7.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0046644806323033,
+   "n_cycles": 601,
+   "qdiff_var_log10": -3.9087985870097173,
+   "severson_info": {
+    "var": 0.0001233676843564863,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8718861749999995,
+    "cycle100": 1.9142900049999996,
+    "median_all": 1.829769418333333
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4741509204166665,
+    "cv_ah_median": 0.3532293108333334,
+    "cc_s_median": 1326.69,
+    "cv_s_median": 1825.44
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.0690487125,
+    "s": 1072.7999999999997,
+    "i_mean": 0.2315726851851852
+   },
+   "status": "ok"
+  },
+  "R3_battery-8": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-4/R3_battery-8.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0046592424037715,
+   "n_cycles": 751,
+   "qdiff_var_log10": -4.16421958387895,
+   "severson_info": {
+    "var": 6.851417239673117e-05,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8742889816666666,
+    "cycle100": 1.9244004025,
+    "median_all": 1.8219165624999998
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4592417020833333,
+    "cv_ah_median": 0.3597162641666665,
+    "cc_s_median": 1313.25,
+    "cv_s_median": 1816.92
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.0686614458333333,
+    "s": 1075.2000000000003,
+    "i_mean": 0.22989667282809612
+   },
+   "status": "ok"
+  },
+  "RW_battery-1": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-5/RW_battery-1.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 0.9996738202555719,
+   "n_cycles": 197,
+   "qdiff_var_log10": -1.7948335270720235,
+   "severson_info": {
+    "var": 0.01603860061438411,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.7688313725,
+    "cycle100": 1.8366360416666667,
+    "median_all": 1.8306618383333335
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4319316125000001,
+    "cv_ah_median": 0.39369528999999986,
+    "cc_s_median": 859.17,
+    "cv_s_median": 1665.96
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06278809166666668,
+    "s": 963.54,
+    "i_mean": 0.23403930957683744
+   },
+   "status": "ok"
+  },
+  "RW_battery-2": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-5/RW_battery-2.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0043088322663736,
+   "n_cycles": 307,
+   "qdiff_var_log10": -1.653393568651922,
+   "severson_info": {
+    "var": 0.022212959836189195,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8655870725000003,
+    "cycle100": 1.8686715624999997,
+    "median_all": 1.8475276691666664
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.45776197625,
+    "cv_ah_median": 0.3816190141666666,
+    "cc_s_median": 874.65,
+    "cv_s_median": 1501.8600000000001
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05239038083333333,
+    "s": 817.5600000000002,
+    "i_mean": 0.22982389610389609
+   },
+   "status": "ok"
+  },
+  "RW_battery-3": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-5/RW_battery-3.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0047377088154632,
+   "n_cycles": 340,
+   "qdiff_var_log10": -2.190841479134506,
+   "severson_info": {
+    "var": 0.006444044352266727,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.7763088508333331,
+    "cycle100": 1.851176175,
+    "median_all": 1.8216745158333332
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4186761729166664,
+    "cv_ah_median": 0.39772372791666666,
+    "cc_s_median": 851.8199999999999,
+    "cv_s_median": 1565.73
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.056843745,
+    "s": 891.9900000000001,
+    "i_mean": 0.22979255223467554
+   },
+   "status": "ok"
+  },
+  "RW_battery-4": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-5/RW_battery-4.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0035059700293747,
+   "n_cycles": 252,
+   "qdiff_var_log10": -1.663712043493963,
+   "severson_info": {
+    "var": 0.021691418653935556,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.851112068333333,
+    "cycle100": 1.8442619408333327,
+    "median_all": 1.83889444375
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4509775883333331,
+    "cv_ah_median": 0.39316540041666664,
+    "cc_s_median": 871.02,
+    "cv_s_median": 1596.0299999999997
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.0576019825,
+    "s": 899.3400000000001,
+    "i_mean": 0.23080668397889936
+   },
+   "status": "ok"
+  },
+  "RW_battery-5": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-5/RW_battery-5.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0040163126753805,
+   "n_cycles": 274,
+   "qdiff_var_log10": -2.1056181531024833,
+   "severson_info": {
+    "var": 0.007841187644133546,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.766081055,
+    "cycle100": 1.8443662041666666,
+    "median_all": 1.8308438429166665
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4458191258333333,
+    "cv_ah_median": 0.38239063125,
+    "cc_s_median": 867.48,
+    "cv_s_median": 1574.7300000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05757675250000001,
+    "s": 903.0299999999999,
+    "i_mean": 0.22986510522676648
+   },
+   "status": "ok"
+  },
+  "RW_battery-6": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-5/RW_battery-6.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.002953768983643,
+   "n_cycles": 219,
+   "qdiff_var_log10": -1.9364502886855721,
+   "severson_info": {
+    "var": 0.01157576525963951,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8406930599999998,
+    "cycle100": 1.8541553558333335,
+    "median_all": 1.829817494166666
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4430725758333334,
+    "cv_ah_median": 0.38954742666666664,
+    "cc_s_median": 865.83,
+    "cv_s_median": 1643.5800000000002
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06199227083333332,
+    "s": 957.9599999999991,
+    "i_mean": 0.23275245327102803
+   },
+   "status": "ok"
+  },
+  "RW_battery-7": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-5/RW_battery-7.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0031398599909689,
+   "n_cycles": 186,
+   "qdiff_var_log10": -1.9908445282299996,
+   "severson_info": {
+    "var": 0.010213050321770918,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.7897755983333334,
+    "cycle100": 1.8458137216666668,
+    "median_all": 1.8315833541666664
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4484869179166666,
+    "cv_ah_median": 0.3874200916666667,
+    "cc_s_median": 869.0699999999999,
+    "cv_s_median": 1693.9499999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06552517541666666,
+    "s": 997.1099999999999,
+    "i_mean": 0.2360948367401604
+   },
+   "status": "ok"
+  },
+  "RW_battery-8": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-5/RW_battery-8.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0036965818638557,
+   "n_cycles": 208,
+   "qdiff_var_log10": -1.8448987721584913,
+   "severson_info": {
+    "var": 0.0142922705210476,
+    "finite": 1.0
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.8302741483333336,
+    "cycle100": 1.8483774050000001,
+    "median_all": 1.8349777508333331
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.4370373395833331,
+    "cv_ah_median": 0.3895353258333334,
+    "cc_s_median": 862.2,
+    "cv_s_median": 1701.5099999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06535651708333332,
+    "s": 998.6399999999999,
+    "i_mean": 0.23390412354712903
+   },
+   "status": "ok"
+  },
+  "Sim_satellite_battery-1": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-6/Sim_satellite_battery-1.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.004446564273435,
+   "n_cycles": 949,
+   "qdiff_var_log10": null,
+   "severson_info": {
+    "reason": "grid_finite=0.682"
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.2019937391666664,
+    "cycle100": 1.9868861549999997,
+    "median_all": 1.5126438449999997
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.2001548766666663,
+    "cv_ah_median": 0.32727230333333335,
+    "cc_s_median": 1080.12,
+    "cv_s_median": 1572.7199999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05916535916666667,
+    "s": 922.3799999999999,
+    "i_mean": 0.2306560818083961
+   },
+   "status": "insufficient_cycles",
+   "reason": "grid_finite=0.682"
+  },
+  "Sim_satellite_battery-2": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-6/Sim_satellite_battery-2.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0045176043397603,
+   "n_cycles": 1226,
+   "qdiff_var_log10": null,
+   "severson_info": {
+    "reason": "grid_finite=0.681"
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.2007174066666666,
+    "cycle100": 1.9867235008333337,
+    "median_all": 1.5326035066666668
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.2001266133333333,
+    "cv_ah_median": 0.32064583541666664,
+    "cc_s_median": 1080.06,
+    "cv_s_median": 1570.77
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.059676354583333355,
+    "s": 938.1599999999996,
+    "i_mean": 0.2286733007956932
+   },
+   "status": "insufficient_cycles",
+   "reason": "grid_finite=0.681"
+  },
+  "Sim_satellite_battery-3": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-6/Sim_satellite_battery-3.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.004661140272607,
+   "n_cycles": 908,
+   "qdiff_var_log10": null,
+   "severson_info": {
+    "reason": "grid_finite=0.685"
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.2011675466666667,
+    "cycle100": 1.9812517241666663,
+    "median_all": 1.5128744154166667
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.1978404395833333,
+    "cv_ah_median": 0.3275668,
+    "cc_s_median": 1078.02,
+    "cv_s_median": 1580.4599999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.05929353125000001,
+    "s": 923.6999999999996,
+    "i_mean": 0.23099326419141408
+   },
+   "status": "insufficient_cycles",
+   "reason": "grid_finite=0.685"
+  },
+  "Sim_satellite_battery-4": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-6/Sim_satellite_battery-4.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0045605049051023,
+   "n_cycles": 943,
+   "qdiff_var_log10": null,
+   "severson_info": {
+    "reason": "grid_finite=0.684"
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.2021465225000003,
+    "cycle100": 1.9810110375000005,
+    "median_all": 1.5124857783333336
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.1990709395833332,
+    "cv_ah_median": 0.32783811083333336,
+    "cc_s_median": 1079.19,
+    "cv_s_median": 1599.7199999999998
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.060501327500000014,
+    "s": 943.44,
+    "i_mean": 0.2305882872928177
+   },
+   "status": "insufficient_cycles",
+   "reason": "grid_finite=0.684"
+  },
+  "Sim_satellite_battery-5": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-6/Sim_satellite_battery-5.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0045642668304753,
+   "n_cycles": 1301,
+   "qdiff_var_log10": null,
+   "severson_info": {
+    "reason": "grid_finite=0.682"
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.1993964366666665,
+    "cycle100": 1.963595365,
+    "median_all": 1.5108831008333332
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.1910588845833332,
+    "cv_ah_median": 0.3236298574999999,
+    "cc_s_median": 1071.9,
+    "cv_s_median": 1564.9199999999996
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.059319173333333294,
+    "s": 923.1600000000001,
+    "i_mean": 0.23091796536796538
+   },
+   "status": "insufficient_cycles",
+   "reason": "grid_finite=0.682"
+  },
+  "Sim_satellite_battery-6": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-6/Sim_satellite_battery-6.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0044690910474352,
+   "n_cycles": 1075,
+   "qdiff_var_log10": null,
+   "severson_info": {
+    "reason": "grid_finite=0.678"
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.2000264733333335,
+    "cycle100": 1.9959785408333333,
+    "median_all": 1.530179996666667
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.1855937516666664,
+    "cv_ah_median": 0.33292645416666655,
+    "cc_s_median": 1066.98,
+    "cv_s_median": 1685.6399999999999
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06514869749999999,
+    "s": 1032.24,
+    "i_mean": 0.2266090534979424
+   },
+   "status": "insufficient_cycles",
+   "reason": "grid_finite=0.678"
+  },
+  "Sim_satellite_battery-7": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-6/Sim_satellite_battery-7.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0046819976481853,
+   "n_cycles": 949,
+   "qdiff_var_log10": null,
+   "severson_info": {
+    "reason": "grid_finite=0.689"
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.2009264558333332,
+    "cycle100": 1.9749421449999998,
+    "median_all": 1.5129212774999998
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.1927891733333333,
+    "cv_ah_median": 0.33092465000000004,
+    "cc_s_median": 1073.46,
+    "cv_s_median": 1631.28
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.061969692499999986,
+    "s": 967.02,
+    "i_mean": 0.23087860696517415
+   },
+   "status": "insufficient_cycles",
+   "reason": "grid_finite=0.689"
+  },
+  "Sim_satellite_battery-8": {
+   "lib": "XJTU",
+   "raw_file": "/home/peng/data_raw/xjtu/xjtu_raw/Battery Dataset/Batch-6/Sim_satellite_battery-8.mat",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "ratio_median": 1.0046037508140495,
+   "n_cycles": 1053,
+   "qdiff_var_log10": null,
+   "severson_info": {
+    "reason": "grid_finite=0.687"
+   },
+   "grid": "NCM [3.4,4.0]",
+   "qchg_int_Ah": {
+    "cycle10": 1.2008771508333334,
+    "cycle100": 1.9754033474999995,
+    "median_all": 1.5123901741666665
+   },
+   "publisher_default_windows": {
+    "cc_ah_median": 1.1884148325,
+    "cv_ah_median": 0.3342923533333333,
+    "cc_s_median": 1069.56,
+    "cv_s_median": 1647.6
+   },
+   "tail_I_le_0.5_median": {
+    "ah": 0.06253737416666666,
+    "s": 975.1199999999999,
+    "i_mean": 0.23069767008387695
+   },
+   "status": "insufficient_cycles",
+   "reason": "grid_finite=0.687"
+  },
+  "2017-05-12_battery-1": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#0",
+   "row_level_mapping": false,
+   "identity_pass": true,
+   "n_cycles": 1189,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -5.007133183543196,
+   "severson_info": {
+    "var": 9.83709388842825e-06,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.000669549422887137,
+    "bad_cycles_span_gt_2h": 2
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0737078340258943,
+    "cycle100": 1.0750057482775153,
+    "median_all": 1.0569240301466638
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-2": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#1",
+   "row_level_mapping": false,
+   "identity_pass": true,
+   "n_cycles": 1178,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.913007115921734,
+   "severson_info": {
+    "var": 1.2217796411227438e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.000622741205099768,
+    "bad_cycles_span_gt_2h": 2
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0788936098304494,
+    "cycle100": 1.0797780001242423,
+    "median_all": 1.0640020995323625
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-3": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#2",
+   "row_level_mapping": false,
+   "identity_pass": true,
+   "n_cycles": 1176,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.653443990417843,
+   "severson_info": {
+    "var": 2.221038105222286e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0012549700734418628,
+    "bad_cycles_span_gt_2h": 2
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0822022619917842,
+    "cycle100": 1.084032058035023,
+    "median_all": 1.0686758889774786
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-4": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#3",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1225,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.344494628020788,
+   "severson_info": {
+    "var": 4.523820580102778e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0012782380872656933,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0832645078624756,
+    "cycle100": 1.082932382922397,
+    "median_all": 1.0629423285359372
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-5": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#4",
+   "row_level_mapping": false,
+   "identity_pass": true,
+   "n_cycles": 1226,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.56318009085264,
+   "severson_info": {
+    "var": 2.734134715219595e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001286041933626528,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0810939817223049,
+    "cycle100": 1.0818634799770896,
+    "median_all": 1.0616771596096957
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-6": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#5",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1073,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.0578155292883284,
+   "severson_info": {
+    "var": 8.753555118514937e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001387504435478339,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0785960638130134,
+    "cycle100": 1.0788782963596482,
+    "median_all": 1.0564252025822094
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-7": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#6",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 635,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.6673365669939,
+   "severson_info": {
+    "var": 0.00021511140308417103,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013586554307577674,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0791999126045138,
+    "cycle100": 1.0773651613471174,
+    "median_all": 1.0555996883241892
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-8": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#7",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 869,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.6900976332061775,
+   "severson_info": {
+    "var": 0.0002041278995673289,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0012993631095504542,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.096037331297055,
+    "cycle100": 1.093976777519862,
+    "median_all": 1.0751245650695518
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-9": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#8",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 878,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.8938816142114483,
+   "severson_info": {
+    "var": 0.0001276786804973351,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001649936468810413,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.092194541410684,
+    "cycle100": 1.092003985135968,
+    "median_all": 1.0769105030284116
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-10": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#9",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1053,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.959184488361506,
+   "severson_info": {
+    "var": 0.0001098539080732545,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0017680273306304524,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.084404048240461,
+    "cycle100": 1.085512826858669,
+    "median_all": 1.0646888649812678
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-11": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#10",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 905,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.9610324080811035,
+   "severson_info": {
+    "var": 0.00010938747357072178,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014028393525492007,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0773157759435608,
+    "cycle100": 1.080076721037716,
+    "median_all": 1.0638785008375953
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-12": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#11",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 787,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.1052215743113765,
+   "severson_info": {
+    "var": 7.848351145113839e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0007751403871943645,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0567840105649435,
+    "cycle100": 1.0585473406907284,
+    "median_all": 1.0448032426823781
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-13": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#12",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 901,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.014516044004025,
+   "severson_info": {
+    "var": 9.671279976855716e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0016545665877580004,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0790586666673214,
+    "cycle100": 1.0798324174054763,
+    "median_all": 1.0658778821537411
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-14": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#13",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 896,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.9260051602209023,
+   "severson_info": {
+    "var": 0.00011857546591271583,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001638783247033029,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0818116903658064,
+    "cycle100": 1.0816387189594423,
+    "median_all": 1.0672097032652812
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-15": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#14",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 879,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.950508732184144,
+   "severson_info": {
+    "var": 0.00011207048923484392,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015322191587639374,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0729096042036963,
+    "cycle100": 1.0738240413501077,
+    "median_all": 1.0569795014490515
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-16": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#15",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 718,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.950544799338942,
+   "severson_info": {
+    "var": 0.00011206118242572121,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015965216432663617,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0643354219928705,
+    "cycle100": 1.0654313102572273,
+    "median_all": 1.0534463864139314
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-17": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#16",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 861,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.977192250918577,
+   "severson_info": {
+    "var": 0.00010539202499154332,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.000925616729626309,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0842020147085007,
+    "cycle100": 1.084757551244273,
+    "median_all": 1.0699849899761857
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-18": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#17",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 856,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.863842998339001,
+   "severson_info": {
+    "var": 0.00013682233621961493,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015948462464407695,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0746043275222876,
+    "cycle100": 1.0749825295249111,
+    "median_all": 1.0627516448227587
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-19": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#18",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 690,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.530170720502234,
+   "severson_info": {
+    "var": 0.0002950049338784876,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 1,
+    "max_dev": 0.0006086783768119405,
+    "bad_cycles_span_gt_2h": 52
+   },
+   "qchg_int_Ah": {
+    "cycle10": null,
+    "cycle100": 1.0635420506799163,
+    "median_all": 1.031336901762507
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-20": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#19",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 787,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.5114912489395076,
+   "severson_info": {
+    "var": 0.0003079702397069688,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014738828636887342,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0869694695829313,
+    "cycle100": 1.0855233209257442,
+    "median_all": 1.063827078800307
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-21": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#20",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 533,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.2124721231096007,
+   "severson_info": {
+    "var": 0.0006130951447972693,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0037965006476466568,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0731149920303855,
+    "cycle100": 1.0565831942073995,
+    "median_all": 1.014179897912566
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-22": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#21",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 558,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.2134015300402767,
+   "severson_info": {
+    "var": 0.0006117845004712168,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0016683329216401089,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0843163733790873,
+    "cycle100": 1.0739276370723676,
+    "median_all": 1.0405938308956413
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-23": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#22",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 890,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.83163407231369,
+   "severson_info": {
+    "var": 0.0001473553565738436,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015697721078928271,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0811972981797247,
+    "cycle100": 1.0807144604331167,
+    "median_all": 1.065886579208562
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-24": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#23",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1013,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.91617315838525,
+   "severson_info": {
+    "var": 0.00012129051543049421,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0017695368473348867,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0808445809160556,
+    "cycle100": 1.0795703740352431,
+    "median_all": 1.0612921411664444
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-25": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#24",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1016,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.8367112657724594,
+   "severson_info": {
+    "var": 0.0001456427042638289,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014968616610027282,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0759342909481633,
+    "cycle100": 1.0757816596075533,
+    "median_all": 1.0580729699464593
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-26": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#25",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 853,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.9287870047386013,
+   "severson_info": {
+    "var": 0.00011781836599059936,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015788245810379419,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0761552360159412,
+    "cycle100": 1.0757229365045997,
+    "median_all": 1.058741876108868
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-27": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#26",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 869,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.674486899779068,
+   "severson_info": {
+    "var": 0.00021159875117157803,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0009060778978879864,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0904137475930087,
+    "cycle100": 1.08866609455939,
+    "median_all": 1.0709663799146336
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-28": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#27",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 841,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.7430879247551356,
+   "severson_info": {
+    "var": 0.00018068082929973724,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014375472239769652,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0817032303508252,
+    "cycle100": 1.0802791461007586,
+    "median_all": 1.0634857718482404
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-29": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#28",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 859,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.724219337408335,
+   "severson_info": {
+    "var": 0.00018870380729360834,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001535962084311891,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0787085772983327,
+    "cycle100": 1.0771808458904812,
+    "median_all": 1.0636692727276205
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-30": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#29",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 916,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.7225036843209613,
+   "severson_info": {
+    "var": 0.00018945074423055327,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.000845473447752985,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0818477082087732,
+    "cycle100": 1.0808209417022074,
+    "median_all": 1.0646348062053557
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-31": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#30",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 708,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.6348351731219806,
+   "severson_info": {
+    "var": 0.000231827433284339,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014649628106265938,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0816783566214578,
+    "cycle100": 1.0795659434081497,
+    "median_all": 1.0644170427309678
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-32": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#31",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 875,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.651306158138105,
+   "severson_info": {
+    "var": 0.00022319982094254952,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0016742044306633013,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0971041985298253,
+    "cycle100": 1.0931711387819243,
+    "median_all": 1.0752227006784174
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-33": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#32",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 730,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.529718104938206,
+   "severson_info": {
+    "var": 0.0002953125441121031,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0018353270979982877,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0787510985028756,
+    "cycle100": 1.0775365255264824,
+    "median_all": 1.0636564559758583
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-34": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#33",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 756,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.5315834755606135,
+   "severson_info": {
+    "var": 0.00029404684532159247,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013676606821254784,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0943332476716368,
+    "cycle100": 1.092587678111632,
+    "median_all": 1.0771120166003587
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-35": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#34",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 741,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.7310474419610156,
+   "severson_info": {
+    "var": 0.00018576015211924047,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015746839408020414,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0782693721342564,
+    "cycle100": 1.0776403856977568,
+    "median_all": 1.066772763439843
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-36": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#35",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 702,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.649375223278023,
+   "severson_info": {
+    "var": 0.00022419440840165233,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0016585164477555775,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0724977671532123,
+    "cycle100": 1.0722102032330114,
+    "median_all": 1.061530802933448
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-37": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#36",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 703,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.5457142002779993,
+   "severson_info": {
+    "var": 0.00028463336012911453,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0019163074853313436,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.079371520959464,
+    "cycle100": 1.078012965067485,
+    "median_all": 1.0663654115630097
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-38": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#37",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 647,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.56404940975742,
+   "severson_info": {
+    "var": 0.0002728667324200153,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0018109856872321833,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.076875139985865,
+    "cycle100": 1.0746689589436935,
+    "median_all": 1.0629690047946536
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-39": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#38",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 616,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.314320569074391,
+   "severson_info": {
+    "var": 0.00048493042265839516,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013978551483622597,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0748253467079487,
+    "cycle100": 1.0735229668225204,
+    "median_all": 1.0640022382546
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-40": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#39",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 624,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3849070202576113,
+   "severson_info": {
+    "var": 0.00041218575605345056,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013753898903300012,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0849036617306618,
+    "cycle100": 1.0832374741494963,
+    "median_all": 1.074179686969164
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-41": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#40",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 965,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.93765091084404,
+   "severson_info": {
+    "var": 0.00011543807849118881,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.006724934482494032,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0855568935659545,
+    "cycle100": 1.0785687873235728,
+    "median_all": 1.0687777140909969
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-42": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#41",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1050,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.956344733027053,
+   "severson_info": {
+    "var": 0.00011057457198670753,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.003134909050654771,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0813402244391312,
+    "cycle100": 1.078786068512435,
+    "median_all": 1.064723104245138
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-43": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#42",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 701,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.54778212722472,
+   "severson_info": {
+    "var": 0.0002832812778286177,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014681001049078942,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0824261546792242,
+    "cycle100": 1.0827965921769145,
+    "median_all": 1.072484045993066
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-44": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#43",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 650,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.565730880039573,
+   "severson_info": {
+    "var": 0.0002718123090786291,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001965681232010194,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.070556457224839,
+    "cycle100": 1.0666143929244059,
+    "median_all": 1.0551551438719162
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-45": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#44",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 615,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.2835179303692037,
+   "severson_info": {
+    "var": 0.0005205735158551424,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0017272694799475273,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0866241973793176,
+    "cycle100": 1.0830512176633322,
+    "median_all": 1.0759698893346656
+   },
+   "status": "ok"
+  },
+  "2017-05-12_battery-46": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86c0b5fa2ede00015ddf66.mat#45",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 598,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.2897670086078468,
+   "severson_info": {
+    "var": 0.0005131365989694775,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001742474507375515,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0862473215329715,
+    "cycle100": 1.0843670635844729,
+    "median_all": 1.0800362311806475
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-1": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#0",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 326,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -2.56001142227331,
+   "severson_info": {
+    "var": 0.0027541562659929623,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013661057615135803,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0716544369369188,
+    "cycle100": 1.03973641247983,
+    "median_all": 1.0012912676750207
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-2": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#1",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 170,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -2.574341712716658,
+   "severson_info": {
+    "var": 0.0026647611451293763,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001444345231036736,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.067503390973536,
+    "cycle100": 0.9684110569516668,
+    "median_all": 0.9885522603532289
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-3": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#2",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 464,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3734879368771358,
+   "severson_info": {
+    "var": 0.00042316726360254204,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014059743498726037,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0756351552914245,
+    "cycle100": 1.0738608263858718,
+    "median_all": 1.052074865289952
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-4": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#3",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 361,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -2.7669568944452445,
+   "severson_info": {
+    "var": 0.001710185049729021,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.000956135093047721,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0667274882842144,
+    "cycle100": 1.0458223864113596,
+    "median_all": 1.004299064397172
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-5": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#4",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 471,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.202241311921569,
+   "severson_info": {
+    "var": 0.0006277094806267299,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001357066469495193,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.073938976909443,
+    "cycle100": 1.0630728789945592,
+    "median_all": 1.0294390516349592
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-6": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#5",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 507,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.4788144059126513,
+   "severson_info": {
+    "var": 0.00033203632169122554,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0006328003774388447,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0701270300274066,
+    "cycle100": 1.0695899345118796,
+    "median_all": 1.0497656727428386
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-7": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#6",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 545,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.083048660833496,
+   "severson_info": {
+    "var": 0.0008259454007537256,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0011687939196504287,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0705534330911326,
+    "cycle100": 1.0507483026679931,
+    "median_all": 0.9942979917388479
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-8": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#7",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 662,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.3337565132905045,
+   "severson_info": {
+    "var": 4.6370682357763234e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014939330111987685,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0225994861908891,
+    "cycle100": 1.0097483869853436,
+    "median_all": 0.9613749571940436
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-9": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#8",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 981,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -5.049631266694506,
+   "severson_info": {
+    "var": 8.9200796699151e-06,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0006873959525162748,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0300418076211224,
+    "cycle100": 1.0296019689386837,
+    "median_all": 0.9979748648503911
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-10": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#9",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 1060,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.7940820352944886,
+   "severson_info": {
+    "var": 0.00016066377413297172,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013865172504387542,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0337443056272977,
+    "cycle100": 1.0337344683014456,
+    "median_all": 1.0049454637320847
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-11": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#10",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 596,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.476755878411197,
+   "severson_info": {
+    "var": 0.00033361388801392196,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014376135582270467,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0716449461101247,
+    "cycle100": 1.0648652313454496,
+    "median_all": 1.0291839488892445
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-12": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#11",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 505,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.320680105510585,
+   "severson_info": {
+    "var": 0.0004778811437902718,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014183543899627291,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0726802723531905,
+    "cycle100": 1.0682143591919884,
+    "median_all": 1.036822202746194
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-13": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#12",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 491,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.163575727457107,
+   "severson_info": {
+    "var": 0.0006861582233155731,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.000659995335170754,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0731628497534276,
+    "cycle100": 1.0593964797124744,
+    "median_all": 1.0161173301256063
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-14": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#13",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 520,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.0444537981496373,
+   "severson_info": {
+    "var": 0.0009027057355318324,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001416607180957062,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0814133887949005,
+    "cycle100": 1.0700743942009334,
+    "median_all": 1.0357520987125741
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-15": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#14",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 509,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3804565344582675,
+   "severson_info": {
+    "var": 0.00041643139668825157,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0006947955643372672,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0808379195038837,
+    "cycle100": 1.0800121905920206,
+    "median_all": 1.0592118707071052
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-16": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#15",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 208,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.0031563926553435,
+   "severson_info": {
+    "var": 0.0009927584843705626,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001483644405556109,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 0.9653497971807512,
+    "cycle100": 0.9246858365881925,
+    "median_all": 0.923392661035449
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-17": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#16",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 482,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.9028238783236944,
+   "severson_info": {
+    "var": 0.0001250766157018516,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014256262505121062,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0100014597380529,
+    "cycle100": 1.0042780751310636,
+    "median_all": 0.970002399356418
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-18": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#17",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 525,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.334716151639698,
+   "severson_info": {
+    "var": 0.0004626833254805114,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.000994212843850218,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0727441112156115,
+    "cycle100": 1.0726722740998869,
+    "median_all": 1.0495705873778198
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-19": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#18",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 523,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3793885022122976,
+   "severson_info": {
+    "var": 0.00041745675969515305,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014196535931838936,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0654741453742276,
+    "cycle100": 1.0575051634443455,
+    "median_all": 1.0252603978917796
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-20": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#19",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 489,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.177272200719401,
+   "severson_info": {
+    "var": 0.0006648563167038248,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013995867888774236,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0477898296717407,
+    "cycle100": 1.0314381894790745,
+    "median_all": 1.0008490567552704
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-21": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#20",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 531,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.5817523646590725,
+   "severson_info": {
+    "var": 0.0002619676325657706,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013824983532752105,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.085553723898222,
+    "cycle100": 1.0845756293310895,
+    "median_all": 1.0620143597378333
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-22": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#21",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 520,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3898909201523244,
+   "severson_info": {
+    "var": 0.00040748261057942743,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001483140948085798,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0787055512652834,
+    "cycle100": 1.0748664478346486,
+    "median_all": 1.0461388134213165
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-23": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#22",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 540,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.4277902289461966,
+   "severson_info": {
+    "var": 0.0003734304870299167,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013674064804031273,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0822523946951448,
+    "cycle100": 1.0816808525753332,
+    "median_all": 1.0587974965060623
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-24": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#23",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 562,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.378770094863996,
+   "severson_info": {
+    "var": 0.0004180516146293943,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001500755442317726,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0762547194171845,
+    "cycle100": 1.0695433644572814,
+    "median_all": 1.046109356398503
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-25": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#24",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 524,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.568125799397861,
+   "severson_info": {
+    "var": 0.0002703175238631815,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.000610677452743584,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0702427254554032,
+    "cycle100": 1.070188760507675,
+    "median_all": 0.9830239290328358
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-26": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#25",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 487,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3225302964644627,
+   "severson_info": {
+    "var": 0.0004758495944740281,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013552977873239175,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0703634264880737,
+    "cycle100": 1.066832563162568,
+    "median_all": 0.9710629034317593
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-27": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#26",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 498,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.275090989252761,
+   "severson_info": {
+    "var": 0.0005307732300178909,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0006363755402656931,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0806447661915555,
+    "cycle100": 1.07658854034951,
+    "median_all": 0.9821041212843066
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-28": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#27",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 495,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.4397596467930174,
+   "severson_info": {
+    "var": 0.0003632790500191424,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0007196990315411582,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0692621523254686,
+    "cycle100": 1.0683575503335054,
+    "median_all": 1.0472460591522759
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-29": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#28",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 541,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.403672319384593,
+   "severson_info": {
+    "var": 0.0003947550373488967,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0026643339682866267,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.074452593619581,
+    "cycle100": 1.0743303710560799,
+    "median_all": 1.0583628946586545
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-30": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#29",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 522,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.620161389866493,
+   "severson_info": {
+    "var": 0.0002397941644976383,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001312272101064896,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0751205319981885,
+    "cycle100": 1.0776598115345781,
+    "median_all": 1.0655940606405236
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-31": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#30",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 507,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.4943873027548373,
+   "severson_info": {
+    "var": 0.0003203411255976663,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014559533026583921,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.069379563117195,
+    "cycle100": 1.0694931204532045,
+    "median_all": 1.0507690253639463
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-32": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#31",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 519,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.5061298655584143,
+   "severson_info": {
+    "var": 0.0003117957092887894,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015406999119952638,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.076646536977152,
+    "cycle100": 1.0768329009931117,
+    "median_all": 1.0623144263834388
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-33": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#32",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 544,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.384347854799366,
+   "severson_info": {
+    "var": 0.0004127167977429054,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0009255131943349371,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0779083753927667,
+    "cycle100": 1.0786519260585787,
+    "median_all": 1.067288764080534
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-34": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#33",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 546,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.572254156955991,
+   "severson_info": {
+    "var": 0.00026776008859331766,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001682881558009465,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0828176237373328,
+    "cycle100": 1.0830102496704235,
+    "median_all": 1.0720591622009554
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-35": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#34",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 526,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.5989369546175527,
+   "severson_info": {
+    "var": 0.000251804243879576,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0017321202025544742,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0720248507909647,
+    "cycle100": 1.0727368667481514,
+    "median_all": 1.0603621241144856
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-36": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#35",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 486,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3858564481389144,
+   "severson_info": {
+    "var": 0.00041128564515063957,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013767414097120422,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0709403888323779,
+    "cycle100": 1.0701523457696156,
+    "median_all": 1.0498142491100606
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-37": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#36",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 560,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.4673806526217446,
+   "severson_info": {
+    "var": 0.0003408939921532537,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015750583900865664,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0822708259169453,
+    "cycle100": 1.0841514527201574,
+    "median_all": 1.0688333346601164
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-38": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#37",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 502,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.4130019249615793,
+   "severson_info": {
+    "var": 0.00038636526452957463,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014719786662185815,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0768789663615392,
+    "cycle100": 1.079472696855183,
+    "median_all": 1.0687999814837958
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-39": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#38",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 487,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.4110739469489406,
+   "severson_info": {
+    "var": 0.0003880842815869733,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0017093628614772748,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.071917965815655,
+    "cycle100": 1.072854195162323,
+    "median_all": 1.0596616056933656
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-40": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#39",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 480,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.383637420415534,
+   "severson_info": {
+    "var": 0.0004133924870900281,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015215513332487377,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.082247595378856,
+    "cycle100": 1.0846313807020207,
+    "median_all": 1.0725539801718218
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-41": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#40",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 530,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.4319550673901125,
+   "severson_info": {
+    "var": 0.0003698664446113303,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.001354221397912609,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0803948221738764,
+    "cycle100": 1.0793457700735773,
+    "median_all": 1.05410486211065
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-42": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#41",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 452,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3304926350927215,
+   "severson_info": {
+    "var": 0.00046720487411712903,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013809924311553366,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0724899267193537,
+    "cycle100": 1.072792810838584,
+    "median_all": 1.0590758270049694
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-43": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#42",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 492,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.45555239761556,
+   "severson_info": {
+    "var": 0.0003503060213414293,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0015535450764691426,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0804696299526628,
+    "cycle100": 1.0810681476810788,
+    "median_all": 1.0648625267773033
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-44": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#43",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 487,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.271254143934949,
+   "severson_info": {
+    "var": 0.0005354832074421492,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0017495367547005216,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0765548603627144,
+    "cycle100": 1.0774838049429314,
+    "median_all": 1.0611149965327606
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-45": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#44",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 479,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.329046499498504,
+   "severson_info": {
+    "var": 0.0004687631894279246,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0014554135835019156,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.072884932767244,
+    "cycle100": 1.0754866372778913,
+    "median_all": 1.0633876854340514
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-46": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#45",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 514,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.5635803118843854,
+   "severson_info": {
+    "var": 0.0002731616253175781,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0013824105708614407,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0730866182891898,
+    "cycle100": 1.0722652555770364,
+    "median_all": 1.0510570400331332
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-47": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#46",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 449,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.2413904442525348,
+   "severson_info": {
+    "var": 0.0005736005455911591,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0016749874353153876,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0751849571245258,
+    "cycle100": 1.077771837762928,
+    "median_all": 1.0677852897746514
+   },
+   "status": "ok"
+  },
+  "2017-06-30_battery-48": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bf13fa2ede00015ddd82.mat#47",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 745,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.918209114803293,
+   "severson_info": {
+    "var": 0.0001207232407145824,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0017564793875937143,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.047009581578031,
+    "cycle100": 1.0448446227095074,
+    "median_all": 1.015839068493805
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-1": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#0",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1008,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.1145241596604,
+   "severson_info": {
+    "var": 7.682027196238087e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.00784265878543949,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.078412608027723,
+    "cycle100": 1.0761551932421323,
+    "median_all": 1.057407230633181
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-2": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#1",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1062,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.156735042127188,
+   "severson_info": {
+    "var": 6.970516472922426e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.00805068855219566,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.076561946354026,
+    "cycle100": 1.0741831383519898,
+    "median_all": 1.0533674464214897
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-3": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#2",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 1266,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.611568628367081,
+   "severson_info": {
+    "var": 2.4458587444191624e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.007681244563687364,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0704215949808362,
+    "cycle100": 1.0677877553981623,
+    "median_all": 1.0436282567799746
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-4": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#3",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1114,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.003057965616277,
+   "severson_info": {
+    "var": 9.929835053087773e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.00809714024770458,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.072244846086838,
+    "cycle100": 1.0715048374138607,
+    "median_all": 1.0508001035241414
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-5": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#4",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 1047,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.068982526641535,
+   "severson_info": {
+    "var": 8.53134438248262e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.008450630928848096,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0825546493767748,
+    "cycle100": 1.0825557179370866,
+    "median_all": 1.0607629206367069
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-6": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#5",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 827,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.993928587215291,
+   "severson_info": {
+    "var": 0.00010140781209632857,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.007772433192194026,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0614126326074984,
+    "cycle100": 1.0592016587477693,
+    "median_all": 1.039780289819106
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-7": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#6",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 666,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.3572936035702723,
+   "severson_info": {
+    "var": 0.00043924456497897624,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.012120554484205447,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0726767037164264,
+    "cycle100": 1.0560534689685905,
+    "median_all": 1.014070116240792
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-8": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#7",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1835,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.352336103572635,
+   "severson_info": {
+    "var": 4.442872973026211e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013633630497917295,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0848034831426154,
+    "cycle100": 1.0841200656852428,
+    "median_all": 1.0564675602460782
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-9": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#8",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 827,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.9839107481582157,
+   "severson_info": {
+    "var": 0.00010377416601528434,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013498091428466388,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0819813062654686,
+    "cycle100": 1.0807013705470598,
+    "median_all": 1.0657021162765872
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-10": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#9",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1038,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.8651456113799014,
+   "severson_info": {
+    "var": 0.00013641256923077299,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013723069533139325,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0872129062890081,
+    "cycle100": 1.086896540488943,
+    "median_all": 1.0725557948084532
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-11": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#10",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1077,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.22177539069225,
+   "severson_info": {
+    "var": 6.001013576592329e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.01374207713363496,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0783950106461155,
+    "cycle100": 1.0780636064309332,
+    "median_all": 1.0595851009631216
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-12": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#11",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 816,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.765450673376702,
+   "severson_info": {
+    "var": 0.0001716126614563707,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013724886803940177,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0851379616174612,
+    "cycle100": 1.0828349727268667,
+    "median_all": 1.0646837294068465
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-13": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#12",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 931,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.8194488605777175,
+   "severson_info": {
+    "var": 0.00015154832456962253,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013441342659206556,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.090251598194834,
+    "cycle100": 1.0896448902449494,
+    "median_all": 1.0766557764123499
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-14": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#13",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 815,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.982646885883139,
+   "severson_info": {
+    "var": 0.00010407660430658852,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.01374062703511101,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0834924701151396,
+    "cycle100": 1.081771529271001,
+    "median_all": 1.0624827681192315
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-15": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#14",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 857,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.8939011755214885,
+   "severson_info": {
+    "var": 0.00012767292977723026,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013480311191682366,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0903391108113705,
+    "cycle100": 1.0902881638198227,
+    "median_all": 1.0753266683137823
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-16": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#15",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 875,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.884396193213506,
+   "severson_info": {
+    "var": 0.00013049798528155243,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013746870653430393,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0857328331891563,
+    "cycle100": 1.0839988361833006,
+    "median_all": 1.0669563996066642
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-17": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#16",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 1637,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.5319721078143225,
+   "severson_info": {
+    "var": 2.9378383260161165e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0035426273267904,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0670272845960977,
+    "cycle100": 1.0658237864199682,
+    "median_all": 1.0368920043153635
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-18": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#17",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1314,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.27432429971107,
+   "severson_info": {
+    "var": 5.317110676161015e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0034429383712893235,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0713727694262596,
+    "cycle100": 1.06934134405289,
+    "median_all": 1.043054347019281
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-19": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#18",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1145,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.11674472309179,
+   "severson_info": {
+    "var": 7.642848957900546e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0032896918545938627,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0730626679636779,
+    "cycle100": 1.0699530997238162,
+    "median_all": 1.0467589569679634
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-20": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#19",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 1154,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.028933320762333,
+   "severson_info": {
+    "var": 9.355493023266967e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.003516528174855615,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0769273191111417,
+    "cycle100": 1.0739030086080377,
+    "median_all": 1.0494226379758889
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-21": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#20",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 812,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.9573717174713248,
+   "severson_info": {
+    "var": 0.00011031340310465998,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013856699247780838,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0816097190363725,
+    "cycle100": 1.0807416367825164,
+    "median_all": 1.0655523526878263
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-22": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#21",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 771,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.53471823147069,
+   "severson_info": {
+    "var": 0.0002919320443180911,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.005325505857992909,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0733913206116137,
+    "cycle100": 1.0593091732739037,
+    "median_all": 1.0192215647103586
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-23": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#22",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 1001,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.911754783556372,
+   "severson_info": {
+    "var": 0.00012253078516714244,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.003049355692335756,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.061369301339256,
+    "cycle100": 1.0592717828269338,
+    "median_all": 1.0445749205224764
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-24": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#23",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 2189,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.382085093940854,
+   "severson_info": {
+    "var": 4.148727461473012e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.012112635416455233,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0814774639752178,
+    "cycle100": 1.080078427954995,
+    "median_all": 1.0435206656129605
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-25": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#24",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 824,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.059585122417607,
+   "severson_info": {
+    "var": 8.717960111185966e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013084327080659465,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0625067894776943,
+    "cycle100": 1.0636437234234764,
+    "median_all": 1.0476672131501132
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-26": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#25",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 988,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.031830372159226,
+   "severson_info": {
+    "var": 9.293292956968866e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013676676342827706,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0771364510539838,
+    "cycle100": 1.0787184293390242,
+    "median_all": 1.0574857673910547
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-27": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#26",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1027,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.095562656057492,
+   "severson_info": {
+    "var": 8.024857771722257e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.012772705400290463,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0880423763096092,
+    "cycle100": 1.08799882874839,
+    "median_all": 1.066026500208576
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-28": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#27",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 849,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.019021151909384,
+   "severson_info": {
+    "var": 9.571474531818639e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013377423228257686,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0767147389767928,
+    "cycle100": 1.0768462646224668,
+    "median_all": 1.059116472574399
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-29": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#28",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 540,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.2907542850812392,
+   "severson_info": {
+    "var": 0.0005119714165497929,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.021114162386485044,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0675424482715117,
+    "cycle100": 1.055833984024534,
+    "median_all": 1.0331459912311511
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-30": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#29",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 857,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.956827117205698,
+   "severson_info": {
+    "var": 0.00011045182160785838,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013485687397500667,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.08377605694119,
+    "cycle100": 1.0839481784652432,
+    "median_all": 1.0636964591834561
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-31": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#30",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 934,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.9849949912594242,
+   "severson_info": {
+    "var": 0.00010351541050959851,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013600555058538164,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0859353477898468,
+    "cycle100": 1.0848275515413182,
+    "median_all": 1.0697215383432868
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-32": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#31",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 730,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -3.723667117781644,
+   "severson_info": {
+    "var": 0.0001889439029639098,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013379906506216998,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0848156603098695,
+    "cycle100": 1.0840540345658671,
+    "median_all": 1.0701818264012481
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-33": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#32",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 2237,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.505661599556265,
+   "severson_info": {
+    "var": 3.1213207568690176e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0006702661774427043,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0758974819187095,
+    "cycle100": 1.074427128014181,
+    "median_all": 1.0385738338270698
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-34": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#33",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1283,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.263692532831222,
+   "severson_info": {
+    "var": 5.448882805051429e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0006313873006763733,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0631130817096395,
+    "cycle100": 1.0614817573977826,
+    "median_all": 1.037717626174517
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-35": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#34",
+   "row_level_mapping": false,
+   "identity_pass": false,
+   "n_cycles": 1157,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.168061490355301,
+   "severson_info": {
+    "var": 6.791074731725619e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0006826485535482618,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0647884804534504,
+    "cycle100": 1.0619622969505307,
+    "median_all": 1.0382161057604014
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-36": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#35",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1092,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.108115143915524,
+   "severson_info": {
+    "var": 7.796233826143087e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0006901623897243176,
+    "bad_cycles_span_gt_2h": 2
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0659105439995396,
+    "cycle100": 1.0635485397775752,
+    "median_all": 1.0419322250298695
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-37": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#36",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 922,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.12075171976106,
+   "severson_info": {
+    "var": 7.572656897764207e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0007403566649306583,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0606463828247295,
+    "cycle100": 1.0582840360582835,
+    "median_all": 1.038838834002884
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-38": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#37",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1389,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.900406105432335,
+   "severson_info": {
+    "var": 1.257748750546029e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0007314370319162917,
+    "bad_cycles_span_gt_2h": 1
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0494838703035128,
+    "cycle100": 1.0488672783116397,
+    "median_all": 1.0235673686092066
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-39": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#38",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1934,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.190697219068834,
+   "severson_info": {
+    "var": 6.446185232967348e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0008269849224828912,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0731694616255392,
+    "cycle100": 1.0712471693683954,
+    "median_all": 1.0393024997973805
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-40": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#39",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1155,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.317087465039259,
+   "severson_info": {
+    "var": 4.818507451865027e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.0008454566679257272,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0510557714534965,
+    "cycle100": 1.0500221906660263,
+    "median_all": 1.0280420278999585
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-41": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#40",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 795,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.186812322177397,
+   "severson_info": {
+    "var": 6.50410700803953e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013613035345791927,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0771275699171405,
+    "cycle100": 1.075967671163766,
+    "median_all": 1.058051440663854
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-42": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#41",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 785,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.08906679523209,
+   "severson_info": {
+    "var": 8.145789907477276e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013785365300687717,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0678471933404678,
+    "cycle100": 1.068038913874422,
+    "median_all": 1.0549580232641882
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-43": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#42",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1641,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.198227887026096,
+   "severson_info": {
+    "var": 6.335371885164236e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013285737209407263,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.083236620732016,
+    "cycle100": 1.0828644350081211,
+    "median_all": 1.0552861361163377
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-44": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#43",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1045,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.1618013642742495,
+   "severson_info": {
+    "var": 6.88967341184979e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013790355687599724,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0872387573039173,
+    "cycle100": 1.0868474751854156,
+    "median_all": 1.0702089041831184
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-45": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#44",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 939,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.019570853836827,
+   "severson_info": {
+    "var": 9.559367240993718e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.013556757496571396,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.0870114455372144,
+    "cycle100": 1.087085753612598,
+    "median_all": 1.0737904103909663
+   },
+   "status": "ok"
+  },
+  "2018-04-12_battery-46": {
+   "lib": "MIT",
+   "raw_file": "mat_5c86bd64fa2ede00015ddbb2.mat#45",
+   "row_level_mapping": true,
+   "identity_pass": true,
+   "n_cycles": 1800,
+   "grid": "LFP [2.5,3.5]",
+   "qdiff_var_log10": -4.397771710758419,
+   "severson_info": {
+    "var": 4.001550381451036e-05,
+    "finite": 1.0
+   },
+   "unit_closure_vs_Qc": {
+    "n": 3,
+    "max_dev": 0.00776152101292129,
+    "bad_cycles_span_gt_2h": 0
+   },
+   "qchg_int_Ah": {
+    "cycle10": 1.078072683259492,
+    "cycle100": 1.0792424488029762,
+    "median_all": 1.0498716024936514
+   },
+   "status": "ok"
+  }
+ },
+ "validation": {
+  "failures": [],
+  "notes": [
+   "V2(b): 31 XJTU cells column-by-column: CV Q reproduced 14/31, CV charge time reproduced 16/31; CC columns recorded unreconciled (window rule not public)",
+   "V2(c): MIT unit closure (integral vs Qc on sampled cycles) max_dev median=1.54e-03"
+  ]
+ }
+}

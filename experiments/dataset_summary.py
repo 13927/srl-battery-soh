@@ -49,6 +49,21 @@ META = {
 }
 
 
+def _decode_rate(code: str) -> str:
+    """Convert the rate code in a cell id to a C-rate string.
+
+    TJU file names look like `CY25-025_1-#1.csv`, with the rate segment dropping the
+    decimal point: `025` = 0.25C, `05` = 0.5C, `1` = 1C. Hence: when it starts with '0',
+    scale by 10^(len-1); otherwise take the integer.
+
+    Correction record: the old implementation used `int(code)/10` for every code,
+    mis-reading `025` as 2.5C and `1` as 0.1C, inconsistent with the release's naming
+    rule (corrected alongside the paper revision).
+    """
+    return f"{int(code) / 10 ** (len(code) - 1):g}C" if code.startswith("0") \
+        else f"{int(code):g}C"
+
+
 def tju_conditions():
     """Parse temperature and charge/discharge rate from the TJU cell ids:
     CY{T}-{chg}_{dch}-#{n}."""
@@ -59,7 +74,7 @@ def tju_conditions():
             m = re.match(r"CY(\d+)-(\d+)_(\d+)", f.stem)
             if m:
                 temps.add(int(m.group(1)))
-                rates.add(f"{int(m.group(2)) / 10:g}C/{m.group(3)}C")
+                rates.add(f"{_decode_rate(m.group(2))}/{_decode_rate(m.group(3))}")
         out[f"TJU-{i + 1}"] = {"temperatures_C": sorted(temps),
                               "charge_discharge_rates": sorted(rates)}
     return out
